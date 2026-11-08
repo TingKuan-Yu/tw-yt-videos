@@ -1,0 +1,988 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>中文文法老師 | 日本已經走完這條路：少子化不會讓房價全面崩盤，但會讓這種房子變成沒人要的遺產</title>
+  <style>
+    :root {
+      --ink: #20302d;
+      --paper: #f7f7f2;
+      --line: #d6dfdc;
+      --en: #eaf3f8;
+      --zh: #f5f0df;
+      --active: #ffe4a3;
+      --active-line: #b96800;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font: 17px/1.7 "Noto Sans TC", "Segoe UI", sans-serif;
+      font-weight: 400;
+      color: var(--ink);
+      background: var(--paper);
+    }
+    main {
+      width: min(1000px, calc(100% - 1rem));
+      margin: 1rem auto 3rem;
+    }
+    h1, h2, h3, p, li, a, td, th, .speech-unit {
+      overflow-wrap: anywhere;
+    }
+    h1 {
+      font-size: 2em;
+      line-height: 1.25;
+      font-weight: 700;
+      margin: 0 0 .75rem;
+    }
+    h2 {
+      font-size: 1.5em;
+      line-height: 1.35;
+      font-weight: 700;
+      margin: .6rem 0 .35rem;
+    }
+    h3 {
+      font-size: 1.17em;
+      line-height: 1.7;
+      font-weight: 700;
+      margin: .5rem 0 .3rem;
+    }
+    p, ul, ol, li {
+      font-size: 1em;
+      line-height: 1.7;
+      font-weight: 400;
+    }
+    p, ul, ol {
+      margin: .35rem 0;
+    }
+    li {
+      margin: .12rem 0;
+    }
+    a {
+      color: #11695e;
+    }
+    a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible {
+      outline: 3px solid #b96800;
+      outline-offset: 2px;
+    }
+    section, article {
+      margin: .55rem 0;
+      padding: .4rem .5rem;
+    }
+    .meta {
+      color: #53635f;
+      font-size: .9rem;
+      line-height: 1.7;
+      margin: .35rem 0;
+      padding: 0;
+      border: 0;
+      background: transparent;
+    }
+    .ai-content-notice {
+      border: 1px solid var(--line);
+      background: #e9f3f0;
+      border-radius: 8px;
+      padding: .5rem;
+    }
+    .table-wrap {
+      max-width: 100%;
+      overflow-x: auto;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      padding: .4rem .5rem;
+      border: 1px solid var(--line);
+      vertical-align: top;
+    }
+    th {
+      background: #e9f3f0;
+    }
+    .lesson-bilingual-pair {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: .4rem;
+      padding: 0;
+    }
+    .lesson-language-block {
+      min-width: 0;
+      padding: .35rem .5rem;
+      border-left: 4px solid;
+      border-radius: 6px;
+    }
+    .lesson-english {
+      background: var(--en);
+      border-color: #4f86a3;
+    }
+    .lesson-chinese {
+      background: var(--zh);
+      border-color: #b89b43;
+    }
+    .controls {
+      --compact-control-height: calc(1.6em + 0.5rem);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #e9f3f0;
+      border-bottom: 1px solid var(--line);
+      padding: .55rem max(.6rem, calc((100% - 1000px)/2));
+      box-shadow: 0 3px 10px #0012;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: .4rem;
+    }
+    button, select, input, output, label {
+      font: inherit;
+      color: var(--ink);
+    }
+    button, select {
+      border: 1px solid #91aaa4;
+      border-radius: 6px;
+      background: white;
+      padding: .38rem .58rem;
+    }
+    button:hover, select:hover {
+      border-color: #244f47;
+    }
+    button:disabled {
+      opacity: .55;
+      cursor: default;
+    }
+    .transport {
+      width: 100%;
+      display: grid;
+      flex: 1 1 100%;
+      gap: .4rem;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+    }
+    .transport button {
+      line-height: normal;
+      padding-block: .28rem;
+      height: var(--compact-control-height);
+      min-width: 0;
+    }
+    .control-field {
+      display: flex;
+      flex: 1 1 13rem;
+      align-items: center;
+      gap: .35rem;
+      min-width: 0;
+    }
+    .control-field label {
+      writing-mode: horizontal-tb;
+      white-space: nowrap;
+      word-break: keep-all;
+      overflow-wrap: normal;
+    }
+    .control-field select, .control-field input {
+      width: 100%;
+      min-width: 0;
+      height: var(--compact-control-height);
+    }
+    .status-line {
+      display: flex;
+      flex: 1 1 100%;
+      gap: .5rem;
+      min-width: 0;
+      flex-wrap: wrap;
+    }
+    #error {
+      color: #9d241d;
+      overflow-wrap: anywhere;
+    }
+    .speech-unit {
+      border-left: 4px solid transparent;
+      border-radius: 6px;
+      padding: .35rem .5rem;
+      margin: .22rem 0;
+      line-height: 1.45;
+      scroll-margin-top: 11rem;
+      white-space: normal;
+    }
+    .speech-unit p {
+      margin: 0;
+      line-height: inherit;
+    }
+    .speech-unit[data-lang="en-US"] {
+      background: var(--en);
+    }
+    .speech-unit[data-lang="zh-TW"] {
+      background: var(--zh);
+    }
+    .speech-unit.active {
+      background: var(--active);
+      border-left-color: var(--active-line);
+      box-shadow: 0 4px 16px #7a4d1945;
+    }
+    .active-group {
+      box-shadow: 0 0 0 2px #b9680060;
+    }
+    .spoken-word {
+      background: #ffcb60;
+      text-decoration: underline;
+    }
+    .bilingual-pair, .teaching-point, .vocabulary-item, .grammar-point, article.term {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: .4rem .5rem;
+      margin: .55rem 0;
+      scroll-margin-top: 15rem;
+    }
+    .bilingual-section {
+      padding: 0;
+    }
+    header {
+      width: min(1000px, calc(100% - 1rem));
+      margin: 1rem auto 0;
+      padding: 0;
+    }
+    header > h1 {
+      font-size: 1.5rem;
+      line-height: 1.25;
+      font-weight: 700;
+      margin: 0 0 .75rem;
+    }
+    .vocabulary-item > h2.speech-unit, article.term > h2 {
+      font-size: 1.15rem;
+      line-height: 1.25;
+      margin: .2rem 0;
+      border: 0;
+      border-bottom: 2px solid #91b9af;
+      padding: 0 0 .25em;
+    }
+    .vocabulary-item > h2.speech-unit {
+      background: transparent;
+      border-radius: 0;
+    }
+    .vocabulary-item > h2.speech-unit.active {
+      background: var(--active);
+      border-left: 4px solid var(--active-line);
+      border-radius: 6px;
+      padding: 0 0 .25em .5rem;
+    }
+    .vocabulary-item > .meta, .term-meta {
+      font-size: .78rem;
+      line-height: 1.35;
+      margin: .15rem 0;
+      padding: 0;
+      border: 0;
+      background: transparent;
+    }
+    .vocab-details {
+      font-size: .9rem;
+      line-height: 1.4;
+      margin: .25rem 0;
+      padding-left: 1.35rem;
+    }
+    .vocab-details li {
+      margin: .05rem 0;
+      font-size: inherit;
+      line-height: inherit;
+    }
+    .vocab-explanation {
+      display: grid;
+      gap: .2rem;
+      margin: 0;
+      padding: 0;
+    }
+    .explanation-row {
+      display: grid;
+      grid-template-columns: 5.5rem minmax(0, 1fr);
+      gap: .3rem;
+      margin: 0;
+      padding: .2rem .4rem;
+      font-size: inherit;
+      line-height: inherit;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+    .explanation-row strong, .field-label {
+      color: #654f16;
+    }
+    .grammar-point h2 {
+      margin: .05rem 0 .35rem;
+      padding-bottom: .3rem;
+      border-bottom: 2px solid #91b9af;
+      font-size: 1.18rem;
+      color: #244f47;
+    }
+    .terminology-main > h1 {
+      font-size: 1.5rem;
+      line-height: 1.3;
+      margin: 0 0 .5rem;
+    }
+    .term-field {
+      display: grid;
+      grid-template-columns: 7rem minmax(0, 1fr);
+      gap: .3rem;
+      align-items: start;
+    }
+    article.term > div.term-field {
+      margin: .12rem 0;
+    }
+    .term-field:not(h2) .speech-unit {
+      margin: 0;
+      padding: .18rem .4rem;
+    }
+    .field-label {
+      font-weight: 700;
+    }
+    .field-value {
+      min-width: 0;
+    }
+    .bilingual-value {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: .22rem;
+    }
+    .example-pair {
+      display: grid;
+      gap: .22rem;
+    }
+    .tools {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: .5rem;
+      margin: .55rem 0;
+    }
+    .search-field {
+      display: grid;
+      grid-template-columns: max-content minmax(0, 1fr);
+      align-items: center;
+      gap: .4rem;
+    }
+    .search-field input {
+      width: 100%;
+      min-width: 0;
+      border: 1px solid #91aaa4;
+      border-radius: 6px;
+      padding: .38rem .58rem;
+    }
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .3rem;
+      margin-top: .5rem;
+    }
+    .filters button {
+      padding: .3rem .5rem;
+    }
+    .filters button[aria-pressed="true"] {
+      background: #244f47;
+      border-color: #244f47;
+      color: white;
+    }
+    .hidden {
+      display: none !important;
+    }
+    @media (max-width: 999px) {
+      .transport {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+    }
+    @media (max-width: 660px) {
+      body {
+        font-size: 16px;
+      }
+      main, header {
+        width: calc(100% - .5rem);
+      }
+      .lesson-bilingual-pair, .term-field, .search-field, .explanation-row {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .controls {
+        padding: .4rem;
+      }
+      .transport {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .control-field {
+        flex: 1 1 100%;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .speech-unit {
+        scroll-margin-top: 18rem;
+      }
+    }
+    .controls .control-field[hidden] {
+      display: none;
+    }
+    @media print {
+      .controls, .tools, .index-link {
+        display: none;
+      }
+      body {
+        background: white;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="controls" aria-label="朗讀控制列">
+    <div class="row">
+      <div class="transport">
+        <button id="previous10" type="button">⏪ 上 10 段</button>
+        <button id="previous" type="button">⏮ 上一段</button>
+        <button id="play" type="button">▶ 播放</button>
+        <button id="pause" type="button">⏸ 暫停 / 繼續</button>
+        <button id="stop" type="button">■ 停止</button>
+        <button id="next" type="button">下一段 ⏭</button>
+        <button id="next10" type="button">下 10 段 ⏩</button>
+      </div>
+      <div class="control-field">
+        <label for="zhVoice">中文語音</label><select id="zhVoice"></select>
+      </div>
+      <div class="control-field">
+        <label for="enVoice">英文語音</label><select id="enVoice"></select>
+      </div>
+      <div class="control-field">
+        <label for="rate">語速 <output id="rateValue">1.0x</output></label>
+        <input id="rate" type="range" min=".6" max="1.4" step=".1" value="1">
+      </div>
+      <div class="status-line">
+        <span id="status" data-ready="準備完成" role="status" aria-live="polite">準備完成</span>
+        <span id="error" role="alert"></span>
+      </div>
+    </div>
+  </div>
+  <main>
+  <h1>中文文法老師 | 日本已經走完這條路：少子化不會讓房價全面崩盤，但會讓這種房子變成沒人要的遺產</h1>
+  <p class="meta">6 個文法點均包含規則、來源例句、解析、快速檢核及答案理由。</p>
+  <div class="speech-unit" lang="zh-Hant" data-lang="zh-TW" data-text="本課練習現在完成式、假設條件句、被動語態、關係子句、連動比較句與可能性表達；來源原句與教學示例須分開，數字與法律主張仍待查證。"><p lang="zh-Hant">本課練習現在完成式、假設條件句、被動語態、關係子句、連動比較句與可能性表達；來源原句與教學示例須分開，數字與法律主張仍待查證。</p></div>
+  <section class="grammar-point" data-grammar-id="grammar-1">
+    <div class="speech-unit" lang="zh-Hant" data-lang="zh-TW" data-text="1. 現在完成式與已發生的變化（Present Perfect） 用 has/have 加過去分詞，表達到現在仍相關的變化或狀態；否定式在 has/have 後加 not。"><h2>1. 現在完成式與已發生的變化（Present Perfect）</h2> <p lang="zh-Hant">用 has/have 加過去分詞，表達到現在仍相關的變化或狀態；否定式在 has/have 後加 not。</p></div>
+    <div class="speech-unit" lang="en" data-lang="en-US" data-text="The demand has not disappeared; it has simply shifted."><p lang="en">The demand has not disappeared; it has simply shifted.</p></div>
+    <div class="speech-unit" lang="zh-Hant" data-lang="zh-TW" data-text="has not disappeared 與 has shifted 都連結過去變化和現在的需求狀態，並非單純描述某個已結束日期。原句合乎文法，不需修正。 完成式強調與現在相關，不自動表示事情永遠不會改變。 Teaching rewrite：Not needed；原句已自然。"><p lang="zh-Hant">has not disappeared 與 has shifted 都連結過去變化和現在的需求狀態，並非單純描述某個已結束日期。原句合乎文法，不需修正。 完成式強調與現在相關，不自動表示事情永遠不會改變。 Teaching rewrite：Not needed；原句已自然。</p></div>
+    <div class="speech-unit" lang="zh-Hant" data-lang="zh-TW" data-text="快速檢核：哪一句正確使用現在完成式？ A. The demand has not disappear. B. The demand has not disappeared."><p lang="zh-Hant">快速檢核：哪一句正確使用現在完成式？ A. The demand has not disappear. B. The demand has not disappeared.</p></div>
+    <div class="speech-unit" lang="zh-Hant" data-lang="zh-TW" data-text="答案是 B。has 後需要過去分詞 disappeared，而不是原形 disappear。"><p lang="zh-Hant">答案是 B。has 後需要過去分詞 disappeared，而不是原形 disappear。</p></div>
+  </section>
+  <section class="grammar-point" data-grammar-id="grammar-2">
+    <div class="speech-unit" lang="zh-Hant" data-lang="zh-TW" data-text="2. 假設條件句（Hypothetical Conditional） if 子句可用過去式表達假設，主句用 should/would 等情態動詞加原形；were determined 是被動的假設形式。"><h2>2. 假設條件句（Hypothetical Conditional）</h2> <p lang="zh-Hant">if 子句可用過去式表達假設，主句用 should/would 等情態動詞加原形；were determined 是被動的假設形式。</p></div>
+    <div class="speech-unit" lang="en" data-lang="en-US" data-text="If housing prices were truly determined by population, Japan&#x27;s housing price curve should be a waterfall."><p lang="en">If housing prices were truly determined by population, Japan&#x27;s housing price curve should be a waterfall.</p></div>
+    <div class="speech-unit" lang="zh-Hant" data-lang="zh-TW" data-text="來源先假設房價真的只由人口決定，再用 should be a waterfall 推論應見的曲線；講者接著對照現實。原句並非已確認的因果定律。 改成 will 會提高確定性；比喻不是可直接計算的模型。 Teaching rewrite：Not needed；保留來源的 should 與比喻。"><p lang="zh-Hant">來源先假設房價真的只由人口決定，再用 should be a waterfall 推論應見的曲線；講者接著對照現實。原句並非已確認的因果定律。 改成 will 會提高確定性；比喻不是可直接計算的模型。 Teaching rewrite：Not needed；保留來源的 should 與比喻。</p></div>
+    <div class="speech-unit" lang="zh-Hant" data-lang="zh-TW" data-text="快速檢核：哪一句保留來源 should 並有正確主句結構？ A. If housing prices were truly determined by population, Japan&#x27;s housing price curve should be a waterfall. B. If housing prices were truly determined by population, Japan&#x27;s housing price curve should is a waterfall."><p lang="zh-Hant">快速檢核：哪一句保留來源 should 並有正確主句結構？ A. If housing prices were truly determined by population, Japan&#x27;s housing price curve should be a waterfall. B. If housing prices were truly determined by population, Japan&#x27;s housing price curve should is a waterfall.</p></div>
+    <div class="speech-unit" lang="zh-Hant" data-lang="zh-TW" data-text="答案是 A。情態動詞 should 後接原形 be，不能接 is。"><p lang="zh-Hant">答案是 A。情態動詞 should 後接原形 be，不能接 is。</p></div>
+  </section>
+  <section class="grammar-point" data-grammar-id="grammar-3">
+    <div class="speech-unit" lang="zh-Hant" data-lang="zh-TW" data-text="3. 被動語態與決定因素（Passive Voice） be 加過去分詞構成被動語態；by 後可列出作用者或決定因素，焦點落在受到影響的主詞。"><h2>3. 被動語態與決定因素（Passive Voice）</h2> <p lang="zh-Hant">be 加過去分詞構成被動語態；by 後可列出作用者或決定因素，焦點落在受到影響的主詞。</p></div>
+    <div class="speech-unit" lang="en" data-lang="en-US" data-text="The price of newly built houses is determined by land costs, construction materials, wages, interest rates, and how much money banks are willing to lend."><p lang="en">The price of newly built houses is determined by land costs, construction materials, wages, interest rates, and how much money banks are willing to lend.</p></div>
+    <div class="speech-unit" lang="zh-Hant" data-lang="zh-TW" data-text="主詞是 price，is determined 把焦點放在價格，by 後列土地、建材、工資、利率與放貸意願。這是來源主張，語法正確不等於經濟主張已查證。 被動結構不表示 by 清單一定涵蓋所有真實影響因素。 Teaching rewrite：Not needed；原句被動結構清楚。"><p lang="zh-Hant">主詞是 price，is determined 把焦點放在價格，by 後列土地、建材、工資、利率與放貸意願。這是來源主張，語法正確不等於經濟主張已查證。 被動結構不表示 by 清單一定涵蓋所有真實影響因素。 Teaching rewrite：Not needed；原句被動結構清楚。</p></div>
+    <div class="speech-unit" lang="zh-Hant" data-lang="zh-TW" data-text="快速檢核：哪一句正確使用被動語態？ A. The price is determine by several factors. B. The price is determined by several factors."><p lang="zh-Hant">快速檢核：哪一句正確使用被動語態？ A. The price is determine by several factors. B. The price is determined by several factors.</p></div>
+    <div class="speech-unit" lang="zh-Hant" data-lang="zh-TW" data-text="答案是 B。is 後需使用過去分詞 determined。"><p lang="zh-Hant">答案是 B。is 後需使用過去分詞 determined。</p></div>
+  </section>
+  <section class="grammar-point" data-grammar-id="grammar-4">
+    <div class="speech-unit" lang="zh-Hant" data-lang="zh-TW" data-text="4. 關係子句補充描述（Relative Clause） that/which 引導的關係子句可修飾名詞；動詞數與被修飾的先行詞一致。"><h2>4. 關係子句補充描述（Relative Clause）</h2> <p lang="zh-Hant">that/which 引導的關係子句可修飾名詞；動詞數與被修飾的先行詞一致。</p></div>
+    <div class="speech-unit" lang="en" data-lang="en-US" data-text="This is the underlying reality of Japan, a country that loses 500,000 to 600,000 people every year."><p lang="en">This is the underlying reality of Japan, a country that loses 500,000 to 600,000 people every year.</p></div>
+    <div class="speech-unit" lang="zh-Hant" data-lang="zh-TW" data-text="a country that loses ... 中，that 修飾單數 country，所以使用 loses。子句補充來源所稱的年度人口減少；數字仍依來源處理。 關係子句提供描述，不代表額外數據已獨立查證。 Teaching rewrite：Not needed；原句關係子句正確。"><p lang="zh-Hant">a country that loses ... 中，that 修飾單數 country，所以使用 loses。子句補充來源所稱的年度人口減少；數字仍依來源處理。 關係子句提供描述，不代表額外數據已獨立查證。 Teaching rewrite：Not needed；原句關係子句正確。</p></div>
+    <div class="speech-unit" lang="zh-Hant" data-lang="zh-TW" data-text="快速檢核：以單數 a country 為先行詞時，哪一句正確？ A. This is a country that loses people each year. B. This is a country that lose people each year."><p lang="zh-Hant">快速檢核：以單數 a country 為先行詞時，哪一句正確？ A. This is a country that loses people each year. B. This is a country that lose people each year.</p></div>
+    <div class="speech-unit" lang="zh-Hant" data-lang="zh-TW" data-text="答案是 A。先行詞 country 是單數，一般現在式須使用 loses。"><p lang="zh-Hant">答案是 A。先行詞 country 是單數，一般現在式須使用 loses。</p></div>
+  </section>
+  <section class="grammar-point" data-grammar-id="grammar-5">
+    <div class="speech-unit" lang="zh-Hant" data-lang="zh-TW" data-text="5. 連動比較句（Correlative Comparatives） the 加比較級引出變化，另一個 the 加比較級表達連動結果，例如 the more ..., the closer ...。"><h2>5. 連動比較句（Correlative Comparatives）</h2> <p lang="zh-Hant">the 加比較級引出變化，另一個 the 加比較級表達連動結果，例如 the more ..., the closer ...。</p></div>
+    <div class="speech-unit" lang="en" data-lang="en-US" data-text="The more of these seven points you encounter, the closer your property is to becoming a liability."><p lang="en">The more of these seven points you encounter, the closer your property is to becoming a liability.</p></div>
+    <div class="speech-unit" lang="zh-Hant" data-lang="zh-TW" data-text="The more ... the closer ... 把符合的風險特徵數與接近負擔的程度連動；這是來源的分析框架，沒有提供可精算的評分模型。 比較方向不等於保證結果，也不表示每個特徵權重相同。 Teaching rewrite：Not needed；原句比較結構正確。"><p lang="zh-Hant">The more ... the closer ... 把符合的風險特徵數與接近負擔的程度連動；這是來源的分析框架，沒有提供可精算的評分模型。 比較方向不等於保證結果，也不表示每個特徵權重相同。 Teaching rewrite：Not needed；原句比較結構正確。</p></div>
+    <div class="speech-unit" lang="zh-Hant" data-lang="zh-TW" data-text="快速檢核：哪一句正確使用來源的連動比較結構？ A. The more points you encounter, closer your property is to becoming a liability. B. The more points you encounter, the closer your property is to becoming a liability."><p lang="zh-Hant">快速檢核：哪一句正確使用來源的連動比較結構？ A. The more points you encounter, closer your property is to becoming a liability. B. The more points you encounter, the closer your property is to becoming a liability.</p></div>
+    <div class="speech-unit" lang="zh-Hant" data-lang="zh-TW" data-text="答案是 B。兩段比較結構都需要 the，第二段不能省略。"><p lang="zh-Hant">答案是 B。兩段比較結構都需要 the，第二段不能省略。</p></div>
+  </section>
+  <section class="grammar-point" data-grammar-id="grammar-6">
+    <div class="speech-unit" lang="zh-Hant" data-lang="zh-TW" data-text="6. 可能性與保留語氣（Modality and Hedging） may 加原形動詞表達可能性，而不是已確定結果；may exceed 與 will exceed 的承諾強度不同。"><h2>6. 可能性與保留語氣（Modality and Hedging）</h2> <p lang="zh-Hant">may 加原形動詞表達可能性，而不是已確定結果；may exceed 與 will exceed 的承諾強度不同。</p></div>
+    <div class="speech-unit" lang="en" data-lang="en-US" data-text="In some areas of central and southern Taiwan, due to excessive price increases in the previous two years and a high proportion of investment, the correction may exceed 10%."><p lang="en">In some areas of central and southern Taiwan, due to excessive price increases in the previous two years and a high proportion of investment, the correction may exceed 10%.</p></div>
+    <div class="speech-unit" lang="zh-Hant" data-lang="zh-TW" data-text="來源用 may exceed 10% 表示部分地區可能修正超過 10%；地區範圍與 may 都限制結論。原句是預測，不是已實現的跌幅。 把 may 換成 will 會增加確定性，不是等義修正。 Teaching rewrite：Not needed；保留來源的可能性。"><p lang="zh-Hant">來源用 may exceed 10% 表示部分地區可能修正超過 10%；地區範圍與 may 都限制結論。原句是預測，不是已實現的跌幅。 把 may 換成 will 會增加確定性，不是等義修正。 Teaching rewrite：Not needed；保留來源的可能性。</p></div>
+    <div class="speech-unit" lang="zh-Hant" data-lang="zh-TW" data-text="快速檢核：哪一句保留 may 且使用正確動詞形式？ A. The correction may exceed 10%. B. The correction may exceeds 10%."><p lang="zh-Hant">快速檢核：哪一句保留 may 且使用正確動詞形式？ A. The correction may exceed 10%. B. The correction may exceeds 10%.</p></div>
+    <div class="speech-unit" lang="zh-Hant" data-lang="zh-TW" data-text="答案是 A。情態動詞 may 後接原形 exceed，不能加 s。"><p lang="zh-Hant">答案是 A。情態動詞 may 後接原形 exceed，不能加 s。</p></div>
+  </section>
+  <div class="speech-unit" lang="zh-Hant" data-lang="zh-TW" data-text="複習時先指出句構，再說明它表達的時間、條件或確定性；自然的文法不代表來源事實已查證，保留原句與待查證資訊。"><p lang="zh-Hant">複習時先指出句構，再說明它表達的時間、條件或確定性；自然的文法不代表來源事實已查證，保留原句與待查證資訊。</p></div>
+  <p class="index-link"><a href="lesson.html">返回主要課程</a> · <a href="../index.html">返回課程索引</a></p>
+  </main>
+  <script>
+    (() => {
+      "use strict";
+      const byId = (id) => document.getElementById(id);
+      const controls = document.querySelector(".controls");
+      const allUnits = Array.from(document.querySelectorAll(".speech-unit[data-lang][data-text]"));
+      const readingMode = byId("readingMode");
+      const zhVoice = byId("zhVoice");
+      const enVoice = byId("enVoice");
+      const rate = byId("rate");
+      const status = byId("status");
+      const error = byId("error");
+      const engine = window.speechSynthesis;
+      const supported = Boolean(engine && window.SpeechSynthesisUtterance);
+      let index = 0;
+      let token = 0;
+      let utterance = null;
+      let state = "ready";
+      let parts = [];
+      let partIndex = 0;
+      let voices = [];
+      let lastGroup = null;
+      let lastUnit = null;
+      let chosenSettings = {};
+    
+      function setPlaybackSettingsHidden(hidden) {
+        document.querySelectorAll(".controls .control-field").forEach((field) => {
+          field.hidden = hidden;
+        });
+      }
+    
+      function eligibleUnits() {
+        const mode = readingMode ? readingMode.value : "both";
+        return allUnits.filter((unit) => mode === "both" || unit.dataset.lang === mode);
+      }
+    
+      function progress() {
+        return `第 ${index + 1} 段 / 共 ${eligibleUnits().length} 段`;
+      }
+    
+      function updateButtons() {
+        const count = eligibleUnits().length;
+        byId("previous").disabled = count === 0 || index === 0;
+        byId("previous10").disabled = count === 0 || index === 0;
+        byId("next").disabled = count === 0 || index >= count - 1;
+        byId("next10").disabled = count === 0 || index >= count - 1;
+        byId("play").disabled = !supported || count === 0;
+        byId("pause").disabled = !supported || count === 0;
+        byId("stop").disabled = !supported || count === 0;
+      }
+    
+      function clearWord() {
+        document.querySelectorAll("mark.spoken-word").forEach((mark) => {
+          const parent = mark.parentNode;
+          while (mark.firstChild) {
+            parent.insertBefore(mark.firstChild, mark);
+          }
+          mark.remove();
+          parent.normalize();
+        });
+      }
+    
+      function clearActive() {
+        clearWord();
+        document.querySelectorAll(".speech-unit.active").forEach((unit) => {
+          unit.classList.remove("active");
+          unit.removeAttribute("aria-current");
+        });
+        document.querySelectorAll(".active-group").forEach((group) => {
+          group.classList.remove("active-group");
+        });
+      }
+    
+      function groupFor(unit) {
+        return unit.closest(
+          ".bilingual-pair, .teaching-point, .vocabulary-item, .grammar-point, article.term[data-term][data-domain]"
+        ) || unit;
+      }
+    
+      function highlight(unit) {
+        clearActive();
+        unit.classList.add("active");
+        unit.setAttribute("aria-current", "true");
+        groupFor(unit).classList.add("active-group");
+      }
+    
+      function position(unit) {
+        const group = groupFor(unit);
+        const top = controls.getBoundingClientRect().bottom + 8;
+        const bottom = window.innerHeight - 8;
+        let rect = unit.getBoundingClientRect();
+        const fits = rect.height <= bottom - top;
+        const visible = rect.top >= top && (fits ? rect.bottom <= bottom : rect.top < bottom);
+        if (!visible) {
+          if (group !== lastGroup && group !== unit) {
+            group.scrollIntoView({ block: "start", behavior: "instant" });
+          }
+          rect = unit.getBoundingClientRect();
+          if (rect.top < top || (fits ? rect.bottom > bottom : rect.top >= bottom)) {
+            window.scrollBy({ top: rect.top - top, behavior: "instant" });
+          }
+        }
+        lastGroup = group;
+        lastUnit = unit;
+      }
+    
+      function invalidate() {
+        token += 1;
+        utterance = null;
+        parts = [];
+        partIndex = 0;
+        state = "ready";
+        if (supported) {
+          engine.cancel();
+        }
+        clearActive();
+        lastGroup = null;
+        lastUnit = null;
+      }
+    
+      function voiceScore(voice, language) {
+        const name = (voice.name + " " + voice.voiceURI).toLowerCase();
+        let score = 0;
+        if (/natural|online/.test(name)) {
+          score += 20;
+        }
+        if (/xiaoxiao|曉曉|zira|aria|jenny|female/.test(name)) {
+          score += 10;
+        }
+        if (language === "zh" && /microsoft/.test(name) &&
+            /xiaoxiao|曉曉/.test(name) && /natural|online/.test(name)) {
+          score += 100;
+        }
+        return score;
+      }
+    
+      function fillVoices(select, language) {
+        const oldURI = select.value;
+        const candidates = voices.filter((voice) => voice.lang.toLowerCase().startsWith(language));
+        select.replaceChildren();
+        let best = null;
+        let bestScore = -1;
+        candidates.forEach((voice) => {
+          const option = document.createElement("option");
+          option.value = voice.voiceURI;
+          option.textContent = `${voice.name} (${voice.lang})`;
+          select.appendChild(option);
+          const score = voiceScore(voice, language);
+          if (score > bestScore) {
+            best = voice;
+            bestScore = score;
+          }
+        });
+        if (candidates.some((voice) => voice.voiceURI === oldURI)) {
+          select.value = oldURI;
+        } else if (best) {
+          select.value = best.voiceURI;
+        }
+      }
+    
+      function settings() {
+        return {
+          mode: readingMode ? readingMode.value : "both",
+          zh: zhVoice.value,
+          en: enVoice.value,
+          rate: rate.value
+        };
+      }
+    
+      function loadVoices() {
+        voices = engine.getVoices();
+        fillVoices(zhVoice, "zh");
+        fillVoices(enVoice, "en");
+        chosenSettings = settings();
+      }
+    
+      function waitAt(target) {
+        invalidate();
+        index = Math.max(0, Math.min(target, eligibleUnits().length - 1));
+        setPlaybackSettingsHidden(false);
+        error.textContent = "";
+        updateButtons();
+        const unit = eligibleUnits()[index];
+        if (!unit) {
+          status.textContent = "沒有可朗讀內容";
+          return;
+        }
+        state = "waiting";
+        status.textContent = `待播：${progress()}`;
+        highlight(unit);
+        position(unit);
+      }
+    
+      function navigate(delta) {
+        const count = eligibleUnits().length;
+        const target = Math.max(0, Math.min(index + delta, count - 1));
+        if (count === 0 || target === index) {
+          return;
+        }
+        waitAt(target);
+      }
+    
+      function changeSettings() {
+        const next = settings();
+        if (Object.keys(next).every((key) => next[key] === chosenSettings[key])) {
+          return;
+        }
+        const target = next.mode !== chosenSettings.mode ? 0 : index;
+        chosenSettings = next;
+        byId("rateValue").textContent = `${Number(rate.value).toFixed(1)}x`;
+        waitAt(target);
+      }
+    
+      function splitParts(text) {
+        const prefix = text.match(/^\s*(?:(?:>>|»)\s*)+/);
+        const start = prefix ? prefix[0].length : 0;
+        if (!readingMode) {
+          return [{ text: text.slice(start), offset: start }];
+        }
+        const chunks = [];
+        let cursor = start;
+        while (cursor < text.length) {
+          while (cursor < text.length && /\s/.test(text[cursor])) {
+            cursor += 1;
+          }
+          if (cursor === text.length) {
+            break;
+          }
+          const limit = Math.min(cursor + 140, text.length);
+          let end = limit;
+          for (let i = cursor; i < limit; i += 1) {
+            const decimal = text[i] === "." && /\d/.test(text[i - 1] || "") &&
+              /\d/.test(text[i + 1] || "");
+            if (!decimal && /[.!?。！？]/.test(text[i]) &&
+                (/[。！？]/.test(text[i]) || i + 1 === text.length || /[\s"”]/.test(text[i + 1]))) {
+              end = i + 1;
+              break;
+            }
+          }
+          if (end === limit && limit < text.length) {
+            for (let i = limit - 1; i > cursor; i -= 1) {
+              if (/[,;:，；：\s]/.test(text[i])) {
+                end = i + 1;
+                break;
+              }
+            }
+          }
+          if (end < text.length && /[\uDC00-\uDFFF]/.test(text[end])) {
+            end -= 1;
+          }
+          let trimmedEnd = end;
+          while (trimmedEnd > cursor && /\s/.test(text[trimmedEnd - 1])) {
+            trimmedEnd -= 1;
+          }
+          if (trimmedEnd > cursor) {
+            chunks.push({ text: text.slice(cursor, trimmedEnd), offset: cursor });
+          }
+          cursor = end;
+        }
+        return chunks;
+      }
+    
+      function wordBoundary(unit, start, length) {
+        clearWord();
+        const text = unit.textContent.trim();
+        if (!Number.isInteger(start) || start < 0 || start >= text.length) {
+          return;
+        }
+        if (/[\uDC00-\uDFFF]/.test(text[start]) && start > 0) {
+          start -= 1;
+        }
+        let end = length > 0 ? Math.min(text.length, start + length) : start;
+        if (end === start) {
+          const match = text.slice(start).match(/^[^\s,.!?;:，。！？；：]+/);
+          end = start + (match ? match[0].length : String.fromCodePoint(text.codePointAt(start)).length);
+        }
+        if (end < text.length && /[\uDC00-\uDFFF]/.test(text[end])) {
+          end += 1;
+        }
+        const walker = document.createTreeWalker(unit, NodeFilter.SHOW_TEXT);
+        let offset = 0;
+        let first = null;
+        let last = null;
+        let firstOffset = 0;
+        let lastOffset = 0;
+        while (walker.nextNode()) {
+          const node = walker.currentNode;
+          const next = offset + node.textContent.length;
+          if (!first && start < next) {
+            first = node;
+            firstOffset = start - offset;
+          }
+          if (end <= next) {
+            last = node;
+            lastOffset = end - offset;
+            break;
+          }
+          offset = next;
+        }
+        if (!first || !last || end <= start) {
+          return;
+        }
+        const range = document.createRange();
+        range.setStart(first, firstOffset);
+        range.setEnd(last, lastOffset);
+        const mark = document.createElement("mark");
+        mark.className = "spoken-word";
+        mark.appendChild(range.extractContents());
+        range.insertNode(mark);
+      }
+    
+      function fail(message) {
+        invalidate();
+        state = "error";
+        setPlaybackSettingsHidden(false);
+        status.textContent = "朗讀錯誤";
+        error.textContent = message;
+        updateButtons();
+      }
+    
+      function submitPart() {
+        const unit = eligibleUnits()[index];
+        const part = parts[partIndex];
+        const voiceURI = unit.dataset.lang === "zh-TW" ? zhVoice.value : enVoice.value;
+        const selectedVoice = voices.find((voice) => voice.voiceURI === voiceURI &&
+          voice.lang.toLowerCase().startsWith(unit.dataset.lang === "zh-TW" ? "zh" : "en"));
+        if (!selectedVoice) {
+          fail(`尚無符合 ${unit.dataset.lang} 的語音；請等待語音載入或檢查瀏覽器語音設定。`);
+          return;
+        }
+        const runToken = token;
+        const current = new SpeechSynthesisUtterance(part.text);
+        current.lang = unit.dataset.lang;
+        current.voice = selectedVoice;
+        current.rate = Number(rate.value);
+        utterance = current;
+        state = "pending";
+        status.textContent = `待播：${progress()}`;
+        const valid = () => runToken === token && utterance === current &&
+          eligibleUnits()[index] === unit;
+        current.onstart = () => {
+          if (!valid()) {
+            return;
+          }
+          state = "playing";
+          highlight(unit);
+          status.textContent = `播放中：${progress()}`;
+          if (lastUnit !== unit) {
+            position(unit);
+          }
+        };
+        current.onboundary = (event) => {
+          if (!valid() || state !== "playing") {
+            return;
+          }
+          wordBoundary(unit, part.offset + event.charIndex, event.charLength || 0);
+        };
+        current.onend = () => {
+          if (!valid()) {
+            return;
+          }
+          clearWord();
+          utterance = null;
+          partIndex += 1;
+          if (partIndex < parts.length) {
+            submitPart();
+            return;
+          }
+          if (index + 1 < eligibleUnits().length) {
+            clearActive();
+            index += 1;
+            parts = splitParts(eligibleUnits()[index].dataset.text);
+            partIndex = 0;
+            updateButtons();
+            position(eligibleUnits()[index]);
+            submitPart();
+            return;
+          }
+          state = "completed";
+          clearActive();
+          lastGroup = null;
+          lastUnit = null;
+          status.textContent = `播放完成：${progress()}`;
+          setPlaybackSettingsHidden(false);
+          updateButtons();
+        };
+        current.onerror = (event) => {
+          if (!valid()) {
+            return;
+          }
+          if (event.error === "canceled" || event.error === "interrupted") {
+            invalidate();
+            status.textContent = "準備完成";
+            setPlaybackSettingsHidden(false);
+            return;
+          }
+          fail(`語音引擎錯誤：${event.error || "unknown"}`);
+        };
+        engine.speak(current);
+      }
+    
+      function play() {
+        if (!supported || eligibleUnits().length === 0) {
+          return;
+        }
+        if (state === "paused" && utterance) {
+          engine.resume();
+          state = "playing";
+          status.textContent = `播放中：${progress()}`;
+          setPlaybackSettingsHidden(true);
+          position(eligibleUnits()[index]);
+          return;
+        }
+        if (state === "playing" || state === "pending") {
+          return;
+        }
+        const wasWaiting = state === "waiting";
+        invalidate();
+        error.textContent = "";
+        const unit = eligibleUnits()[index];
+        if (wasWaiting) {
+          highlight(unit);
+        }
+        setPlaybackSettingsHidden(true);
+        status.textContent = `待播：${progress()}`;
+        position(unit);
+        parts = splitParts(unit.dataset.text);
+        partIndex = 0;
+        if (parts.length === 0) {
+          fail("此單元沒有可朗讀文字。");
+          return;
+        }
+        submitPart();
+      }
+    
+      byId("play").addEventListener("click", play);
+      byId("pause").addEventListener("click", () => {
+        if (state === "paused" && utterance) {
+          play();
+        } else if (state === "playing" && utterance) {
+          engine.pause();
+          state = "paused";
+          setPlaybackSettingsHidden(false);
+          status.textContent = `已暫停：${progress()}`;
+          position(eligibleUnits()[index]);
+        }
+      });
+      byId("stop").addEventListener("click", () => {
+        invalidate();
+        status.textContent = "準備完成";
+        error.textContent = "";
+        setPlaybackSettingsHidden(false);
+        updateButtons();
+      });
+      [["previous10", -10], ["previous", -1], ["next", 1], ["next10", 10]].forEach(([id, delta]) => {
+        byId(id).addEventListener("click", () => {
+          if (!byId(id).disabled) {
+            navigate(delta);
+          }
+        });
+      });
+      zhVoice.addEventListener("change", changeSettings);
+      enVoice.addEventListener("change", changeSettings);
+      rate.addEventListener("input", changeSettings);
+      if (readingMode) {
+        readingMode.addEventListener("change", changeSettings);
+      }
+      if (supported) {
+        loadVoices();
+        engine.addEventListener("voiceschanged", loadVoices);
+      } else {
+        error.textContent = "此瀏覽器不支援 Web Speech API；仍可閱讀全部教材。";
+        chosenSettings = settings();
+      }
+      updateButtons();
+    })();
+  </script>
+</body>
+</html>

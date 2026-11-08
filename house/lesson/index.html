@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>住宅議題 English Lessons</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font: 17px/1.6 "Noto Sans TC", "Segoe UI", sans-serif;
+      background: #f7f7f2;
+      color: #20302d;
+    }
+    .page {
+      width: min(1180px, calc(100% - 24px));
+      margin: 24px auto 48px;
+    }
+    .index-header {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 24px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .index-title {
+      line-height: 1.25;
+    }
+    .subject-mark {
+      display: grid;
+      place-items: center;
+      border: 1px solid #d6dfdc;
+      border-radius: 8px;
+      padding: 12px;
+      background: #e9f3f0;
+    }
+    .subject-mark strong {
+      font-size: 2rem;
+    }
+    .lesson-list {
+      display: grid;
+      gap: 12px;
+    }
+    .lesson-card {
+      display: grid;
+      grid-template-columns: 8rem minmax(0, 1fr) minmax(18rem, auto);
+      gap: 16px;
+      align-items: center;
+      background: white;
+      border: 1px solid #d6dfdc;
+      border-radius: 8px;
+      padding: 12px 14px;
+    }
+    .links {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(9rem, 1fr));
+      gap: 8px;
+    }
+    h1, h2, p, a {
+      overflow-wrap: anywhere;
+    }
+    .links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: .45rem .7rem;
+      border-radius: 6px;
+      border: 1px solid #91aaa4;
+      background: white;
+      color: #20302d;
+      text-decoration: none;
+    }
+    .links a.primary {
+      background: #2f6f64;
+      color: white;
+    }
+    a:hover {
+      border-color: #244f47;
+      text-decoration: underline;
+    }
+    a:focus-visible {
+      outline: 3px solid #b96800;
+      outline-offset: 2px;
+    }
+    @media (max-width: 820px) {
+      .lesson-card {
+        grid-template-columns: 6rem minmax(0, 1fr);
+      }
+      .links {
+        grid-column: 1 / -1;
+      }
+    }
+    @media (max-width: 560px) {
+      .index-header, .lesson-card, .links {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .subject-mark {
+        justify-self: start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="index-header">
+      <div>
+        <p class="eyebrow">Housing and Society</p>
+        <h1 class="index-title">住宅議題<br>English Lessons</h1>
+        <p class="intro">從雙語來源學習住宅、人口與社會議題的英文；來源數據與法律敘述須另行查證。</p>
+      </div>
+      <div class="subject-mark" aria-label="住宅議題">
+        <strong>HS</strong><span>住宅</span>
+      </div>
+    </header>
+    <section class="lesson-list" aria-label="課程列表">
+      <article class="lesson-card">
+        <div class="lesson-number">Lesson 01</div>
+        <div>
+          <h2>日本已經走完這條路：少子化不會讓房價全面崩盤，但會讓這種房子變成沒人要的遺產</h2>
+          <p class="level">評論型英文轉錄／住宅市場與流動性 · CEFR B2（推定）</p>
+        </div>
+        <nav class="links" aria-label="日本已經走完這條路：少子化不會讓房價全面崩盤，但會讓這種房子變成沒人要的遺產 課程連結">
+          <a class="primary" href="日本少子化房/lesson.html">主要課程</a>
+          <a href="日本少子化房/bilingual.html">中英對照朗讀</a>
+          <a href="日本少子化房/teacher.html">英文教學</a>
+          <a href="日本少子化房/content-summary.html">本文導讀</a>
+          <a href="日本少子化房/vocabulary.html">中文單字老師</a>
+          <a href="日本少子化房/grammar.html">文法與句構</a>
+          <a href="日本少子化房/terminology.html">整合術語</a>
+        </nav>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
