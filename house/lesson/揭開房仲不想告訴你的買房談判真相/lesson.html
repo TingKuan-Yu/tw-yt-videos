@@ -1,0 +1,3028 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>
+      房市冷成這樣，房仲竟然不給出價？揭開房仲不想告訴你的買房談判真相！房市分析 | 房仲 | 房價下跌
+    </title>
+    <style>
+      :root {
+        --ink: #20302d;
+        --paper: #f7f7f2;
+        --line: #d6dfdc;
+        --en: #eaf3f8;
+        --zh: #f5f0df;
+        --active: #ffe4a3;
+        --active-line: #b96800;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font:
+          17px/1.7 "Noto Sans TC",
+          "Segoe UI",
+          sans-serif;
+        font-weight: 400;
+        color: var(--ink);
+        background: var(--paper);
+      }
+      main {
+        width: min(1000px, calc(100% - 1rem));
+        margin: 1rem auto 3rem;
+      }
+      h1,
+      h2,
+      h3,
+      p,
+      li,
+      a,
+      td,
+      th,
+      .speech-unit {
+        overflow-wrap: anywhere;
+      }
+      h1 {
+        font-size: 2em;
+        line-height: 1.25;
+        font-weight: 700;
+        margin: 0 0 0.75rem;
+      }
+      h2 {
+        font-size: 1.5em;
+        line-height: 1.35;
+        font-weight: 700;
+        margin: 0.6rem 0 0.35rem;
+      }
+      h3 {
+        font-size: 1.17em;
+        line-height: 1.7;
+        font-weight: 700;
+        margin: 0.5rem 0 0.3rem;
+      }
+      p,
+      ul,
+      ol,
+      li {
+        font-size: 1em;
+        line-height: 1.7;
+        font-weight: 400;
+      }
+      p,
+      ul,
+      ol {
+        margin: 0.35rem 0;
+      }
+      li {
+        margin: 0.12rem 0;
+      }
+      a {
+        color: #11695e;
+      }
+      a:focus-visible,
+      button:focus-visible,
+      select:focus-visible,
+      input:focus-visible {
+        outline: 3px solid #b96800;
+        outline-offset: 2px;
+      }
+      section,
+      article {
+        margin: 0.55rem 0;
+        padding: 0.4rem 0.5rem;
+      }
+      .meta {
+        color: #53635f;
+        font-size: 0.9rem;
+        line-height: 1.7;
+        margin: 0.35rem 0;
+        padding: 0;
+        border: 0;
+        background: transparent;
+      }
+      .ai-content-notice {
+        border: 1px solid var(--line);
+        background: #e9f3f0;
+        border-radius: 8px;
+        padding: 0.5rem;
+      }
+      .table-wrap {
+        max-width: 100%;
+        overflow-x: auto;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th,
+      td {
+        padding: 0.4rem 0.5rem;
+        border: 1px solid var(--line);
+        vertical-align: top;
+      }
+      th {
+        background: #e9f3f0;
+      }
+      .lesson-bilingual-pair {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.4rem;
+        padding: 0;
+      }
+      .lesson-language-block {
+        border-radius: 6px;
+        padding: 0.35rem 0.5rem;
+        min-width: 0;
+      }
+      .lesson-english {
+        background: var(--en);
+        border-left: 4px solid #5084a1;
+      }
+      .lesson-chinese {
+        background: var(--zh);
+        border-left: 4px solid #b69846;
+      }
+      .language-label {
+        font-size: 0.78rem;
+        font-weight: 700;
+      }
+      .controls {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: #e9f3f0;
+        border-bottom: 1px solid var(--line);
+        padding: 0.55rem max(0.6rem, calc((100% - 1000px) / 2));
+        box-shadow: 0 3px 10px #0012;
+        --compact-control-height: calc(1.6em + 0.5rem);
+        color: var(--ink);
+        width: 100%;
+        min-width: 0;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.4rem;
+        min-width: 0;
+      }
+      button,
+      select,
+      input,
+      output,
+      label {
+        font: inherit;
+        color: inherit;
+      }
+      button,
+      select {
+        border: 1px solid #91aaa4;
+        border-radius: 6px;
+        background: white;
+        padding: 0.38rem 0.58rem;
+      }
+      button:hover,
+      select:hover {
+        border-color: #244f47;
+      }
+      button:disabled {
+        opacity: 0.55;
+        cursor: default;
+      }
+      .transport {
+        width: 100%;
+        display: grid;
+        flex: 1 1 100%;
+        gap: 0.4rem;
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+      }
+      .transport button {
+        line-height: normal;
+        padding-block: 0.28rem;
+        height: var(--compact-control-height);
+        min-width: 0;
+      }
+      .control-field {
+        display: flex;
+        flex: 1 1 13rem;
+        align-items: center;
+        gap: 0.35rem;
+        min-width: 0;
+      }
+      .control-field label {
+        writing-mode: horizontal-tb;
+        white-space: nowrap;
+        word-break: keep-all;
+        overflow-wrap: normal;
+      }
+      .control-field select,
+      .control-field input {
+        width: 100%;
+        min-width: 0;
+        height: var(--compact-control-height);
+      }
+      .status-line {
+        display: flex;
+        flex: 1 1 100%;
+        gap: 0.5rem;
+        min-width: 0;
+        flex-wrap: wrap;
+      }
+      #error {
+        color: #9d241d;
+        overflow-wrap: anywhere;
+      }
+      .speech-unit {
+        border-left: 4px solid transparent;
+        border-radius: 6px;
+        padding: 0.35rem 0.5rem;
+        margin: 0.22rem 0;
+        line-height: 1.45;
+        scroll-margin-top: 11rem;
+        white-space: normal;
+      }
+      .speech-unit p {
+        margin: 0;
+        line-height: inherit;
+      }
+      .speech-unit[data-lang="en-US"] {
+        background: var(--en);
+      }
+      .speech-unit[data-lang="zh-TW"] {
+        background: var(--zh);
+      }
+      .speech-unit.active {
+        background: var(--active);
+        border-left-color: var(--active-line);
+        box-shadow: 0 4px 16px #7a4d1945;
+      }
+      .active-group {
+        box-shadow: 0 0 0 2px #b9680060;
+      }
+      .spoken-word {
+        background: #ffcb60;
+        text-decoration: underline;
+      }
+      .bilingual-pair,
+      .teaching-point,
+      .vocabulary-item,
+      .grammar-point,
+      article.term {
+        background: white;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 0.4rem 0.5rem;
+        margin: 0.55rem 0;
+        scroll-margin-top: 15rem;
+      }
+      .bilingual-section {
+        padding: 0;
+      }
+      header {
+        width: min(1000px, calc(100% - 1rem));
+        margin: 1rem auto 0;
+        padding: 0;
+      }
+      header > h1 {
+        font-size: 1.5rem;
+        line-height: 1.25;
+        font-weight: 700;
+        margin: 0 0 0.75rem;
+      }
+      .vocabulary-item > h2.speech-unit,
+      article.term > h2 {
+        font-size: 1.15rem;
+        line-height: 1.25;
+        margin: 0.2rem 0;
+        border: 0;
+        border-bottom: 2px solid #91b9af;
+        padding: 0 0 0.25em;
+      }
+      .vocabulary-item > h2.speech-unit {
+        background: transparent;
+        border-radius: 0;
+      }
+      .vocabulary-item > h2.speech-unit.active {
+        background: var(--active);
+        border-left: 4px solid var(--active-line);
+        border-radius: 6px;
+        padding: 0 0 0.25em 0.5rem;
+      }
+      .vocabulary-item > .meta,
+      .term-meta {
+        font-size: 0.78rem;
+        line-height: 1.35;
+        margin: 0.15rem 0;
+        padding: 0;
+        border: 0;
+        background: transparent;
+      }
+      .vocab-details {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        margin: 0.25rem 0;
+        padding-left: 1.35rem;
+      }
+      .vocab-details li {
+        margin: 0.05rem 0;
+        font-size: inherit;
+        line-height: inherit;
+      }
+      .vocab-explanation {
+        display: grid;
+        gap: 0.2rem;
+        margin: 0;
+        padding: 0;
+      }
+      .explanation-row {
+        display: grid;
+        grid-template-columns: 5.5rem minmax(0, 1fr);
+        gap: 0.3rem;
+        margin: 0;
+        padding: 0.2rem 0.4rem;
+        font-size: inherit;
+        line-height: inherit;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+        box-shadow: none;
+      }
+      .explanation-row strong,
+      .field-label {
+        color: #654f16;
+      }
+      .vocabulary-item > .speech-unit[data-lang="zh-TW"]:not(.example-translation) {
+        white-space: normal;
+      }
+      .grammar-point h2 {
+        margin: 0.05rem 0 0.35rem;
+        padding-bottom: 0.3rem;
+        border-bottom: 2px solid #91b9af;
+        font-size: 1.18rem;
+        color: #244f47;
+      }
+      .terminology-main > h1 {
+        font-size: 1.5rem;
+        line-height: 1.3;
+        margin: 0 0 0.5rem;
+      }
+      .term-field {
+        display: grid;
+        grid-template-columns: 7rem minmax(0, 1fr);
+        gap: 0.3rem;
+        align-items: start;
+      }
+      article.term > div.term-field {
+        margin: 0.12rem 0;
+      }
+      .term-field:not(h2) .speech-unit {
+        margin: 0;
+        padding: 0.18rem 0.4rem;
+      }
+      .field-label {
+        font-weight: 700;
+      }
+      .field-value {
+        min-width: 0;
+      }
+      .bilingual-value {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 0.22rem;
+      }
+      .example-pair {
+        display: grid;
+        gap: 0.22rem;
+      }
+      .tools {
+        background: white;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 0.5rem;
+        margin: 0.55rem 0;
+      }
+      .search-field {
+        display: grid;
+        grid-template-columns: max-content minmax(0, 1fr);
+        align-items: center;
+        gap: 0.4rem;
+      }
+      .search-field input {
+        width: 100%;
+        min-width: 0;
+        border: 1px solid #91aaa4;
+        border-radius: 6px;
+        padding: 0.38rem 0.58rem;
+      }
+      .filters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.3rem;
+        margin-top: 0.5rem;
+      }
+      .filters button {
+        padding: 0.3rem 0.5rem;
+      }
+      .filters button[aria-pressed="true"] {
+        background: #244f47;
+        border-color: #244f47;
+        color: white;
+      }
+      .hidden {
+        display: none !important;
+      }
+      @media (max-width: 999px) {
+        .transport {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+      }
+      @media (max-width: 660px) {
+        body {
+          font-size: 16px;
+        }
+        main,
+        header {
+          width: calc(100% - 0.5rem);
+        }
+        .lesson-bilingual-pair,
+        .term-field,
+        .search-field,
+        .explanation-row {
+          grid-template-columns: minmax(0, 1fr);
+        }
+        .controls {
+          padding: 0.4rem;
+        }
+        .transport {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .control-field {
+          flex: 1 1 100%;
+          display: grid;
+          grid-template-columns: minmax(0, 1fr);
+        }
+        .speech-unit {
+          scroll-margin-top: 18rem;
+        }
+      }
+      .controls .control-field[hidden] {
+        display: none;
+      }
+      @media print {
+        .controls,
+        .tools {
+          display: none;
+        }
+        body {
+          background: white;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p><a href="../index.html">返回課程索引</a></p>
+      <h1>房市冷成這樣，房仲竟然不給出價？揭開房仲不想告訴你的買房談判真相！房市分析 | 房仲 | 房價下跌</h1>
+      <p class="ai-content-notice">
+        本教材由 AI 協助整理，以指定原始來源為準；英文為中文來源的轉換譯文。 / Prepared with AI assistance;
+        refer to the designated source. The English is a translation of the Chinese source.
+      </p>
+      <section>
+        <h2>Source and Handling 來源與資料處理</h2>
+        <ul>
+          <li>
+            <strong>來源標題：</strong>
+            房市冷成這樣，房仲竟然不給出價？揭開房仲不想告訴你的買房談判真相！房市分析 | 房仲 | 房價下跌
+          </li>
+          <li>
+            <strong>Video：</strong>
+            <a
+              class="source-video-link"
+              href="https://www.youtube.com/watch?v=KENXse7DuiA"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              開啟原始影片 / Watch source video
+            </a>
+          </li>
+          <li>
+            <strong>來源類型：</strong>
+            中文房市評論影片逐字稿
+          </li>
+          <li>
+            <strong>講者自稱：</strong>
+            美金哥（Meijin Ge 為音譯，非已確認英文姓名）
+          </li>
+          <li>
+            <strong>raw 路徑：</strong>
+            <code>house/converted/揭開房仲不想告訴你的買房談判真相.md</code>
+          </li>
+          <li>
+            <strong>raw SHA-256：</strong>
+            <code>9522940f0b43ab02551738fce0baad7640466c3ef7929ef8933b420a2d3cb789</code>
+          </li>
+          <li>
+            <strong>程度：</strong>
+            CEFR B2（教學推定）
+          </li>
+          <li>
+            <strong>語言身分：</strong>
+            中文是來源整理；所有來源英文均為轉換譯文，不是講者原始英文引文。
+          </li>
+          <li>
+            <strong>處理範圍：</strong>
+            完整保留本文 14 節、157 組配對；來源資訊與轉換註記不混入
+            Reader。摘要、教學例句與一般背景只供學習，不冒充來源正文。
+          </li>
+          <li>
+            <strong>限制：</strong>
+            網友案例、仲介動機、其他買家及法律斷言未獨立查證；來源沒有最終月付金結果，提問數字不是試算答案。不得據此認定個別仲介說謊或作成投資、法律結論。
+          </li>
+        </ul>
+        <p>
+          <a href="bilingual.html">中英對照朗讀</a>
+          ·
+          <a href="teacher.html">英文教學</a>
+          ·
+          <a href="content-summary.html">本文導讀</a>
+          ·
+          <a href="vocabulary.html">中文單字老師</a>
+          ·
+          <a href="grammar.html">文法與句構</a>
+          ·
+          <a href="terminology.html">整合術語</a>
+        </p>
+      </section>
+      <section>
+        <h2>Course Overview 課程概覽</h2>
+        <p>
+          以買房談判評論逐字稿練習查證、比較、表達不確定性與設定價格界線。適合希望用英文討論住宅交易與成本的成人學習者；CEFR
+          B2 為教學推定，不是來源提供。
+        </p>
+      </section>
+      <section>
+        <h2>Learning Goals 學習目標</h2>
+        <ul>
+          <li>用英文區分開價、買方出價、仲介聲稱的底價與已成交紀錄。</li>
+          <li>以兩個確認問題區分屋主實際回應與仲介判斷，不把可能性說成指控。</li>
+          <li>正確使用 may、does not mean、if 與 remember to 重述來源。</li>
+          <li>準確讀出 910 萬至 980 萬的價差，分辨總價、自備款與貸款。</li>
+          <li>以成本依據提出中性出價與不加價的界線，並說明何時願意放棄購買。</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Executive Summary 重點摘要</h2>
+        <p>
+          來源以未獲仲介回應的買方案例，討論仲介成交誘因、實價登錄的比較限制及競爭報價的定錨作用。講者主張先核對資訊、計算自備款與長期負擔，再決定出價或放棄；案例動機、其他買家與法律斷言未獨立查證，來源亦未提供完整月付金結果。
+        </p>
+      </section>
+      <section>
+        <h2>Domain Knowledge 領域知識</h2>
+        <h3>成交誘因與資訊差</h3>
+        <p>
+          Source-stated：買方求省、賣方求高價、仲介求成交；講者認為仲介可能掌握較多談判進度。動機解釋仍是可能性，不是本案調查結論。
+        </p>
+        <h3>比較不是只比社區名稱</h3>
+        <p>
+          Source-stated：車位、採光、漏水、整修、樓層、面向與成交時間都影響比較；歷史紀錄不是現在底價的證明。
+        </p>
+        <h3>預算與融資拆開看</h3>
+        <p>
+          Directly inferred：總價增加 700,000 元，在貸款八成假設下，額外自備款 140,000 元、額外本金 560,000
+          元，合計仍為 700,000 元。
+        </p>
+        <h3>月付金與現金流的範圍</h3>
+        <p>
+          General
+          background：利率、貸款期限及還款安排會影響月付金；租金減房貸尚未包含稅費、維修、空置等其他成本，不直接等於淨報酬。
+        </p>
+        <h3>文件與法律效果</h3>
+        <p>
+          Needs
+          verification：來源說正式出價一定有法律效力；本課保留該來源語氣，但不將其泛化成法律意見，斡旋及要約應依實際文件與適用法律確認。
+        </p>
+      </section>
+      <section>
+        <h2>Key Terminology 核心術語</h2>
+        <p>例句可能包含教學新增示例，不代表來源逐字引文。</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Term</th>
+                <th>Domain</th>
+                <th>Part of Speech</th>
+                <th>繁體中文</th>
+                <th>Plain English</th>
+                <th>繁中定義</th>
+                <th>Meaning in This Source</th>
+                <th>Relationship or Workflow</th>
+                <th>Example</th>
+                <th>例句繁中</th>
+                <th>Evidence</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>asking price</td>
+                <td>Housing</td>
+                <td>Noun phrase</td>
+                <td>開價</td>
+                <td>The price a seller initially asks for.</td>
+                <td>賣方對外提出的出售價格，不等於實際成交價。</td>
+                <td>案例屋主開價為 1,038 萬元，講者另提到仲介聲稱的底價。</td>
+                <td>開價、買方出價與成交價是不同資訊，不能互相代替。</td>
+                <td>The asking price is higher than our budget.</td>
+                <td>開價高於我們的預算。</td>
+                <td>General background</td>
+              </tr>
+              <tr>
+                <td>actual transaction records</td>
+                <td>Housing</td>
+                <td>Plural noun phrase</td>
+                <td>實價登錄資料</td>
+                <td>Records showing prices paid in completed property transactions.</td>
+                <td>記錄已完成不動產交易價格等資訊的資料。</td>
+                <td>買方參考同社區半年前 900 萬出頭的成交紀錄來出價。</td>
+                <td>已成交資料反映過去；比較時仍須考慮屋況、車位、樓層與時間差異。</td>
+                <td>We checked actual transaction records before making an offer.</td>
+                <td>我們出價前先查了實價登錄資料。</td>
+                <td>General background</td>
+              </tr>
+              <tr>
+                <td>brokerage</td>
+                <td>Housing</td>
+                <td>Noun</td>
+                <td>仲介公司</td>
+                <td>A business that helps arrange transactions between buyers and sellers.</td>
+                <td>協助買賣雙方接洽並安排交易的業者。</td>
+                <td>講者討論同一家仲介同時與買方及賣方溝通的利益差異。</td>
+                <td>仲介希望促成交易，不表示其利益必然與任一方完全相同。</td>
+                <td>The brokerage communicates with both sides.</td>
+                <td>仲介公司與雙方溝通。</td>
+                <td>General background</td>
+              </tr>
+              <tr>
+                <td>formal written offer</td>
+                <td>Negotiation</td>
+                <td>Noun phrase</td>
+                <td>正式書面要約</td>
+                <td>A written proposal setting out terms for a purchase.</td>
+                <td>以書面提出購買價格與條件的提議；法律效果須依具體文件確認。</td>
+                <td>講者建議保留金額、條件、期限與對話紀錄，也提到透過仲介斡旋。</td>
+                <td>正式文件與口頭討論不同；不能將不同制度的斡旋文件一概視為相同。</td>
+                <td>Please review the formal written offer before signing.</td>
+                <td>簽名前請先審閱正式書面要約。</td>
+                <td>General background</td>
+              </tr>
+              <tr>
+                <td>minimum acceptable price</td>
+                <td>Negotiation</td>
+                <td>Noun phrase</td>
+                <td>最低可接受價格</td>
+                <td>The lowest price a seller is willing to accept.</td>
+                <td>賣方願意接受的最低價格，可能與開價不同。</td>
+                <td>仲介聲稱屋主底價為 980 萬元；案例沒有獨立證實此資訊。</td>
+                <td>底價與其他買家的報價都是待確認資訊，不應直接當成自己的預算。</td>
+                <td>We do not know the seller's minimum acceptable price.</td>
+                <td>我們不知道賣方最低可接受的價格。</td>
+                <td>General background</td>
+              </tr>
+              <tr>
+                <td>anchoring effect</td>
+                <td>Negotiation</td>
+                <td>Noun phrase</td>
+                <td>定錨效應</td>
+                <td>The influence of an initial reference point on later judgments.</td>
+                <td>判斷受到先出現的參考數字或資訊牽引的現象。</td>
+                <td>講者用 950 萬與 980 萬兩個數字，說明買方可能開始考慮更高報價。</td>
+                <td>注意力被價格區間牽引，不等於已證實有其他買家或房屋價值上升。</td>
+                <td>The anchoring effect can shift our attention to a higher price range.</td>
+                <td>定錨效應可能把我們的注意力移向較高的價格區間。</td>
+                <td>General background</td>
+              </tr>
+              <tr>
+                <td>leverage</td>
+                <td>Negotiation</td>
+                <td>Uncountable noun</td>
+                <td>談判籌碼</td>
+                <td>An advantage that helps someone influence a negotiation.</td>
+                <td>在協商中有助於影響條件或結果的優勢。</td>
+                <td>講者認為真正籌碼是願意不買，而不只是敢出低價。</td>
+                <td>保留其他選擇可支撐價格界線，但不保證對方接受出價。</td>
+                <td>Being willing to walk away gives us leverage.</td>
+                <td>願意離開談判讓我們保有籌碼。</td>
+                <td>General background</td>
+              </tr>
+              <tr>
+                <td>down payment</td>
+                <td>Finance</td>
+                <td>Noun phrase</td>
+                <td>自備款</td>
+                <td>The part of a purchase price paid upfront rather than borrowed.</td>
+                <td>購買時自行支付、未以貸款支應的價款部分。</td>
+                <td>來源假設貸款八成，價格增加 70 萬時，自備款增加 14 萬。</td>
+                <td>自備款與貸款本金分攤價款；其他交易費用不因此自動包括在內。</td>
+                <td>A higher purchase price requires a larger down payment at the same financing ratio.</td>
+                <td>貸款成數相同時，較高買價需要較多自備款。</td>
+                <td>General background</td>
+              </tr>
+              <tr>
+                <td>principal</td>
+                <td>Finance</td>
+                <td>Noun</td>
+                <td>本金</td>
+                <td>The amount borrowed, excluding interest.</td>
+                <td>借入而尚須償還的款項，不包含利息。</td>
+                <td>講者指出三年寬限期後開始償還本金，月付金將增加。</td>
+                <td>本金與利息不同；只付利息不表示原借款已減少。</td>
+                <td>Principal repayment begins after the interest-only period.</td>
+                <td>寬限期後開始償還本金。</td>
+                <td>General background</td>
+              </tr>
+              <tr>
+                <td>interest-only period</td>
+                <td>Finance</td>
+                <td>Noun phrase</td>
+                <td>只繳利息的寬限期</td>
+                <td>A period when loan payments cover interest but not principal.</td>
+                <td>貸款付款只支付利息、尚未償還本金的期間。</td>
+                <td>試算情境設定三年寬限期，之後須重新檢視月付金。</td>
+                <td>寬限期不是免息；前後現金支出不可混為同一負擔。</td>
+                <td>The monthly payment changes when the interest-only period ends.</td>
+                <td>只繳利息的寬限期結束時，月付金會改變。</td>
+                <td>General background</td>
+              </tr>
+              <tr>
+                <td>cash flow</td>
+                <td>Finance</td>
+                <td>Noun phrase</td>
+                <td>現金流</td>
+                <td>Money coming in and going out over a period.</td>
+                <td>一段期間內實際流入與流出的金額。</td>
+                <td>講者用租金扣房貸觀察現金餘額；其他支出須另外確認。</td>
+                <td>租金減房貸只是部分現金流，不能直接當作完整淨收益。</td>
+                <td>We should compare cash flow before and after the interest-only period.</td>
+                <td>我們應比較寬限期前後的現金流。</td>
+                <td>General background</td>
+              </tr>
+              <tr>
+                <td>return on investment</td>
+                <td>Finance</td>
+                <td>Noun phrase</td>
+                <td>投資報酬率</td>
+                <td>A measure comparing an investment's return with its cost.</td>
+                <td>將投資報酬與投入成本比較的衡量方式，計算口徑須先說明。</td>
+                <td>來源提醒買價提高、租金未同步增加，投報率可能變差。</td>
+                <td>投報率是比率，現金流是金額；來源未提供完整費用或最終投報數值。</td>
+                <td>The return on investment depends on both income and costs.</td>
+                <td>投資報酬率同時取決於收入與成本。</td>
+                <td>General background</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+        <h2>Key Vocabulary and Collocations 核心字彙與搭配</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Word or Phrase</th>
+                <th>Section</th>
+                <th>Part of Speech</th>
+                <th>Meaning in Context</th>
+                <th>繁體中文</th>
+                <th>Pronunciation Tip</th>
+                <th>Collocation or Pattern</th>
+                <th>Example</th>
+                <th>例句繁中</th>
+                <th>Memory Tip</th>
+                <th>本課意思</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>make an offer</td>
+                <td>
+                  第 1 章節：房市冷清沒生意，買方想出價房仲卻愛理不理？ / Chapter 1: Why Ignore a Buyer in a
+                  Slow Market?
+                </td>
+                <td>Verb phrase</td>
+                <td>propose a price for something</td>
+                <td>出價</td>
+                <td>offer 的重音在第一音節。</td>
+                <td>make an offer on a home</td>
+                <td>We would like to make an offer on this home.</td>
+                <td>我們想對這間房子出價。</td>
+                <td>把 make an offer 當成完整搭配記憶，不逐字譯成製作報價。</td>
+                <td>本課買方想透過房仲正式提出購屋價格。</td>
+              </tr>
+              <tr>
+                <td>raise</td>
+                <td>
+                  第 1 章節：房市冷清沒生意，買方想出價房仲卻愛理不理？ / Chapter 1: Why Ignore a Buyer in a
+                  Slow Market?
+                </td>
+                <td>Verb</td>
+                <td>increase an amount</td>
+                <td>提高</td>
+                <td>raise 為一個音節，結尾有 z 音。</td>
+                <td>raise an offer</td>
+                <td>We are not ready to raise our offer.</td>
+                <td>我們還沒準備好提高出價。</td>
+                <td>raise 需要受詞，記住 raise our offer。</td>
+                <td>買方原出 910 萬，後來願意提高到 920 萬。</td>
+              </tr>
+              <tr>
+                <td>reasonable</td>
+                <td>
+                  第 2 章節：殘酷現實：你付服務費，房仲就一定站在你這邊嗎？ / Chapter 2: Does Paying a Fee Put
+                  the Agent on Your Side?
+                </td>
+                <td>Adjective</td>
+                <td>fair or sensible in the circumstances</td>
+                <td>合理的</td>
+                <td>重音在第一音節。</td>
+                <td>a reasonable price</td>
+                <td>Is this a reasonable price for the home's condition?</td>
+                <td>以房子的屋況而言，這個價格合理嗎？</td>
+                <td>由 reason 聯想有理由、有根據，不代表單純便宜。</td>
+                <td>講者質疑有歷史成交紀錄就能斷定出價合理的想法。</td>
+              </tr>
+              <tr>
+                <td>negotiate</td>
+                <td>
+                  第 3 章節：揭秘房仲心態：為什麼你願意出價，他卻懶得幫你談？ / Chapter 3: Why an Agent Might
+                  Not Negotiate Your Offer
+                </td>
+                <td>Verb</td>
+                <td>discuss terms to try to reach agreement</td>
+                <td>協商</td>
+                <td>重音在 go 所在的音節。</td>
+                <td>negotiate with the seller</td>
+                <td>Could you negotiate with the seller on our behalf?</td>
+                <td>你能代表我們與賣方協商嗎？</td>
+                <td>連同 with 對象記住，協商不等於對方已答應。</td>
+                <td>房仲可能因認為成交機會低而不積極替買方談。</td>
+              </tr>
+              <tr>
+                <td>worth</td>
+                <td>
+                  第 3 章節：揭秘房仲心態：為什麼你願意出價，他卻懶得幫你談？ / Chapter 3: Why an Agent Might
+                  Not Negotiate Your Offer
+                </td>
+                <td>Adjective</td>
+                <td>having enough value to justify a cost</td>
+                <td>值得的</td>
+                <td>一個音節，結尾 th 不發成 s。</td>
+                <td>be worth the time</td>
+                <td>Is this negotiation worth the time?</td>
+                <td>這場協商值得花時間嗎？</td>
+                <td>worth 後可直接接名詞，不加 to。</td>
+                <td>講者從仲介時間成本解釋為何其可能篩選買方。</td>
+              </tr>
+              <tr>
+                <td>reject</td>
+                <td>
+                  第 5 章節：房仲說「屋主不可能賣」，教你用一招測出這句話是真是假！ / Chapter 5: Ask Whether
+                  the Owner Actually Rejected the Offer
+                </td>
+                <td>Verb</td>
+                <td>refuse to accept something</td>
+                <td>拒絕</td>
+                <td>動詞重音在第二音節。</td>
+                <td>reject an offer</td>
+                <td>Did the owner reject the offer?</td>
+                <td>屋主拒絕這個出價了嗎？</td>
+                <td>接 offer 記住拒絕的是提議，不是猜測屋主心意。</td>
+                <td>關鍵問題是屋主親自拒絕，還是仲介自行判斷。</td>
+              </tr>
+              <tr>
+                <td>keep records</td>
+                <td>
+                  第 5 章節：房仲說「屋主不可能賣」，教你用一招測出這句話是真是假！ / Chapter 5: Ask Whether
+                  the Owner Actually Rejected the Offer
+                </td>
+                <td>Verb phrase</td>
+                <td>retain information for later reference</td>
+                <td>保留紀錄</td>
+                <td>records 作名詞時重音在第一音節。</td>
+                <td>keep records of the terms</td>
+                <td>Please keep records of the amount and deadline.</td>
+                <td>請保留金額與期限的紀錄。</td>
+                <td>keep records of 後接要保留的事項。</td>
+                <td>來源建議留存價格、條件、期限與仲介對話。</td>
+              </tr>
+              <tr>
+                <td>compare</td>
+                <td>
+                  第 6 章節：拿實價登錄殺價一定買便宜？小心這盲點讓你反而買貴！ / Chapter 6: The Limits of
+                  Recorded Transaction Prices
+                </td>
+                <td>Verb</td>
+                <td>examine things to identify similarities and differences</td>
+                <td>比較</td>
+                <td>重音在第二音節。</td>
+                <td>compare prices</td>
+                <td>We need to compare the condition of both homes.</td>
+                <td>我們需要比較兩間房子的屋況。</td>
+                <td>比較時要說清楚比的是價格還是條件。</td>
+                <td>同社區仍可能因車位、樓層或漏水而不能直接比價。</td>
+              </tr>
+              <tr>
+                <td>overpay</td>
+                <td>
+                  第 7 章節：房市下跌期出價大忌！為什麼看過去行情會多當冤大頭？ / Chapter 7: How Past Prices
+                  Can Lead to Overpaying
+                </td>
+                <td>Verb</td>
+                <td>pay more than is appropriate</td>
+                <td>買貴；付過多</td>
+                <td>主要重音在 pay。</td>
+                <td>overpay for a home</td>
+                <td>Relying only on old prices could make us overpay.</td>
+                <td>只依賴舊價格可能讓我們買貴。</td>
+                <td>over 表示過度，與 pay 合成付得太多。</td>
+                <td>講者假設屋主願收 900 萬，買方卻以舊價為錨出 950 萬。</td>
+              </tr>
+              <tr>
+                <td>walk away</td>
+                <td>
+                  第 9 章節：買房談判高手的反向操作：一句話直接破解催促加價！ / Chapter 9: Responding Without
+                  Automatically Raising Your Offer
+                </td>
+                <td>Phrasal verb</td>
+                <td>leave a negotiation without making a deal</td>
+                <td>退出談判；放棄購買</td>
+                <td>away 的重音在第二音節。</td>
+                <td>be willing to walk away</td>
+                <td>We are willing to walk away if the cost is too high.</td>
+                <td>如果成本太高，我們願意放棄購買。</td>
+                <td>不只是走路離開，而是不接受這筆交易。</td>
+                <td>講者把敢不買視為真正的談判籌碼。</td>
+              </tr>
+              <tr>
+                <td>afford</td>
+                <td>
+                  第 11 章節：「只差一點點就買了」？算給你看差 70 萬對現金流的長期影響！ / Chapter 11: The
+                  Cash-flow Impact of an Extra NT$700,000
+                </td>
+                <td>Verb</td>
+                <td>have enough money to pay for something</td>
+                <td>負擔得起</td>
+                <td>重音在第二音節。</td>
+                <td>can afford to buy</td>
+                <td>We need a home we can afford.</td>
+                <td>我們需要負擔得起的房子。</td>
+                <td>can afford 強調財務能力，不是單純喜歡。</td>
+                <td>成交不是唯一目標，買價也必須在買方承受範圍內。</td>
+              </tr>
+              <tr>
+                <td>work out</td>
+                <td>
+                  第 9 章節：買房談判高手的反向操作：一句話直接破解催促加價！ / Chapter 9: Responding Without
+                  Automatically Raising Your Offer
+                </td>
+                <td>Phrasal verb</td>
+                <td>calculate or determine something</td>
+                <td>算清楚；釐清</td>
+                <td>work 與 out 連讀時保留 k 音。</td>
+                <td>work out the costs</td>
+                <td>Let's work out the renovation costs first.</td>
+                <td>我們先算清楚整修費用吧。</td>
+                <td>本課不是運動，而是把費用算出來。</td>
+                <td>講者先評估附近行情、屋況與整修費用再出價。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+        <h2>Communication Functions 溝通功能</h2>
+        <p>以下來源例句均引自 converted 中的英文轉換譯文。</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Function</th>
+                <th>來源例句（轉換譯文）</th>
+                <th>繁中說明與語氣</th>
+                <th>Reusable Pattern</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>確認事件</td>
+                <td>
+                  It's actually simple: ask directly, &quot;Did the owner personally reject this offer, or do
+                  you think they wouldn't accept it?&quot;
+                </td>
+                <td>直接但不是指控；分開確認事件與判斷。</td>
+                <td>Did [person] actually [action], or is that [an assessment]?</td>
+              </tr>
+              <tr>
+                <td>保留可能性</td>
+                <td>
+                  The agent may personally think the price is too low and may never have discussed it with the
+                  owner.
+                </td>
+                <td>may 保留不確定性，不能改成已證實。</td>
+                <td>[Person] may [verb], but we cannot be sure.</td>
+              </tr>
+              <tr>
+                <td>說明限制</td>
+                <td>
+                  Transaction records tell you what sold for how much in the past, not what this home is worth
+                  now, and certainly not what its owner would accept.
+                </td>
+                <td>區分資料能回答與不能回答的問題。</td>
+                <td>[Evidence] tells us [past information], not [current conclusion].</td>
+              </tr>
+              <tr>
+                <td>設定界線</td>
+                <td>
+                  So if the agent still says it's too low, that's fine; I'll keep looking at other homes.
+                </td>
+                <td>不爭辯也不保證成交；保留其他選擇。</td>
+                <td>If [condition], that's fine; I'll [alternative action].</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+        <h2>Useful Sentence Patterns 實用句型</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>用途</th>
+                <th>Pattern</th>
+                <th>語氣與適用情境</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>直接確認</td>
+                <td>Did the owner reject the offer?</td>
+                <td>適合先確認事件；直接但不指控說謊。</td>
+              </tr>
+              <tr>
+                <td>委婉確認</td>
+                <td>Could you clarify whether the owner rejected the offer?</td>
+                <td>教學新增句型；較委婉，以 clarify 要求釐清。</td>
+              </tr>
+              <tr>
+                <td>解釋依據</td>
+                <td>Our offer reflects [condition / renovation costs].</td>
+                <td>教學新增句型，適合說明出價如何反映條件。</td>
+              </tr>
+              <tr>
+                <td>保留退路</td>
+                <td>If [cost] is too high, we are willing to walk away.</td>
+                <td>教學新增句型，適合表達可執行的價格界線。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+        <h2>Natural English 自然英文</h2>
+        <p>
+          Source wording 為 converted 中的英文譯文，不是講者原始英文措辭；本課選句已自然，不虛構文法錯誤。
+        </p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Source wording</th>
+                <th>Natural version</th>
+                <th>Why</th>
+                <th>Tone</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Not necessarily.</td>
+                <td>Not necessarily.</td>
+                <td>原句已自然且簡潔，不必為改寫而改寫；它否定必然性，不是完全否定。</td>
+                <td>中性、審慎</td>
+              </tr>
+              <tr>
+                <td>This is effectively a way of screening clients.</td>
+                <td>This is effectively a way of screening clients.</td>
+                <td>原句已自然；screening clients 保留篩選客人的商業語意。</td>
+                <td>分析性</td>
+              </tr>
+              <tr>
+                <td>That's why I always run calculations at these different prices before buying.</td>
+                <td>That's why I always run calculations at these different prices before buying.</td>
+                <td>原句已自然；run calculations 比逐字翻譯做試算更符合搭配。</td>
+                <td>口語解釋</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+        <h2>Tone, Nuance, and Grammar 語氣、細節與文法</h2>
+        <h3>Source-grounded Grammar Clinic</h3>
+        <p>來源例句為轉換譯文；快速檢核選項是教學新增示例。</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Grammar point</th>
+                <th>Source example</th>
+                <th>Rule</th>
+                <th>Source analysis</th>
+                <th>Quick check A</th>
+                <th>Quick check B</th>
+                <th>Answer</th>
+                <th>Answer reason</th>
+                <th>Teaching rewrite</th>
+                <th>Meaning / tone boundary</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1. 不代表：否定推論（Does not mean）</td>
+                <td>
+                  An agent's wish to close a deal does not mean their interests are exactly the same as yours.
+                </td>
+                <td>單數主詞搭配 does not，後面動詞 mean 使用原形；否定的是推論，不是否定前面的事實。</td>
+                <td>
+                  主詞是 An agent's wish，核心名詞 wish
+                  為單數；講者承認仲介想成交，但不接受利益完全一致的推論。
+                </td>
+                <td>An agent's wish to close a deal does not means their interests are the same.</td>
+                <td>An agent's wish to close a deal does not mean their interests are the same.</td>
+                <td>B</td>
+                <td>助動詞 does 後接原形 mean，不再加第三人稱單數的 s。</td>
+                <td>原句已自然，無須修正。</td>
+                <td>does not mean 否定必然推論，不等於說仲介一定與買方利益衝突。</td>
+              </tr>
+              <tr>
+                <td>2. 可能性而非指控（May + base verb）</td>
+                <td>
+                  The agent may personally think the price is too low and may never have discussed it with the
+                  owner.
+                </td>
+                <td>情態助動詞 may 後接動詞原形，表達可能性，而非已證實的事實。</td>
+                <td>
+                  may personally think 與 may never have discussed
+                  都保留講者的不確定性，沒有斷定仲介真的未轉達。
+                </td>
+                <td>The agent may think the price is too low.</td>
+                <td>The agent may thinks the price is too low.</td>
+                <td>A</td>
+                <td>may 後面的 think 必須是原形，不能使用 thinks。</td>
+                <td>原句已自然，無須修正。</td>
+                <td>把 may 改成肯定陳述會提高確定性，不能拿猜測當成指控。</td>
+              </tr>
+              <tr>
+                <td>3. 條件與可能結果（If + present, might）</td>
+                <td>If you still use past high prices as your benchmark, you might really overpay!</td>
+                <td>if 子句可用現在簡單式描述條件，主要子句用 might 加原形動詞表達可能結果。</td>
+                <td>條件是沿用過去高價作為標準；might overpay 只表示可能買貴，不是保證每次都會。</td>
+                <td>If you use old prices, you might overpaying.</td>
+                <td>If you use old prices, you might overpay.</td>
+                <td>B</td>
+                <td>情態助動詞 might 後接原形 overpay，不接 overpaying。</td>
+                <td>原句已自然，無須修正。</td>
+                <td>此句是條件風險，不可改寫成所有歷史交易資料都沒有用。</td>
+              </tr>
+              <tr>
+                <td>4. 記得去做某事（Remember to + verb）</td>
+                <td>
+                  Remember to keep records of the offer amount, conditions, deadline, and your conversations
+                  with the agent.
+                </td>
+                <td>
+                  remember to 加原形動詞，提醒尚待執行的行動；remember 加動名詞則通常表示記得曾做過的事。
+                </td>
+                <td>Remember to keep 是提醒買方接下來保留出價金額、條件、期限與對話紀錄。</td>
+                <td>Remember to keep the offer records.</td>
+                <td>Remember keeping the offer records.</td>
+                <td>A</td>
+                <td>to keep 指尚待做的事；keeping 在此表示回想曾保留紀錄，意思不同。</td>
+                <td>原句已自然，無須修正。</td>
+                <td>這是提醒，不表示對方已經完成存檔，也不代表有紀錄就必然勝訴。</td>
+              </tr>
+              <tr>
+                <td>5. 用 what 子句說明重點（What-clause as subject）</td>
+                <td>
+                  Because when I buy a home, what matters most isn't beating someone else to it, but whether
+                  the home is worth that price to me.
+                </td>
+                <td>
+                  what matters most 可作名詞子句，表示最重要的事；本課以單一重點作主詞，搭配 is 或 isn't。
+                </td>
+                <td>
+                  what matters most 是句子的主詞；isn't
+                  後對比搶贏別人與房子是否值得這個價格，讓聽者聚焦判斷標準。
+                </td>
+                <td>What matters most is whether we can afford it.</td>
+                <td>What matters most are whether we can afford it.</td>
+                <td>A</td>
+                <td>本句 what matters most 指單一重點，後面接 whether 子句，使用單數 is。</td>
+                <td>原句已自然，無須修正。</td>
+                <td>句型用來表達說話者重視的標準，不代表已證實房屋值得購買。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+        <h2>Content Notes and Recap 內容導讀與摘要</h2>
+        <h3>先看案例中的異常回應 / Start with the unresponsive agent</h3>
+        <p>
+          案例中，屋主開價 1,038 萬，買方從 910 萬加到 920
+          萬並想正式出價，卻被已讀不回。房子下架後是否成交，只有買方調查後的說法；講者關注的核心是回應不清楚。
+        </p>
+        <p>
+          In the case, the asking price was NT$10.38 million. The buyer raised an offer from NT$9.1 million to
+          NT$9.2 million and wanted to make it formal, but received no reply. The claim that the delisted home
+          remained unsold came from the buyer's account. The speaker focuses on unclear communication.
+        </p>
+        <h3>區分成交誘因與買方利益 / Separate closing incentives from the buyer's interests</h3>
+        <p>
+          買方想省錢、賣方想賣高價，仲介則希望促成交易。講者提出時間成本與保留店內成交兩種可能解釋，但沒有證據確認案例仲介的動機。
+        </p>
+        <p>
+          Buyers want a lower price, sellers want a higher one, and agents want a transaction to close. The
+          speaker offers time costs and keeping a sale in-house as possible explanations, but does not
+          establish the agent's motive in this case.
+        </p>
+        <h3>問清楚誰拒絕了出價 / Clarify who rejected the offer</h3>
+        <p>
+          先問是屋主親自拒絕，還是仲介的判斷，再保留正式出價的金額、條件、期限與對話紀錄。來源對法律效力的說法較絕對，實際仍須檢視具體文件與適用條件。
+        </p>
+        <p>
+          Ask whether the owner rejected the offer or the agent merely expects rejection. Keep the amount,
+          conditions, deadline, and conversation records. The source makes a categorical statement about legal
+          effect; the actual position still requires checking the particular documents and conditions.
+        </p>
+        <h3>把歷史價格放回比較條件 / Put past prices back into context</h3>
+        <p>
+          同社區不代表屋況、車位、樓層與面向相同，半年前成交也不代表現在底價。講者用假設說明：以 1,000
+          萬歷史成交為標準，出 950 萬，仍可能高於屋主願收的 900 萬。
+        </p>
+        <p>
+          Homes in one community can differ in condition, parking, floor, and orientation. A sale six months
+          ago does not reveal today's minimum price. In the speaker's hypothetical example, an offer of NT$9.5
+          million based on a past NT$10 million sale could exceed an owner's willingness to accept NT$9
+          million.
+        </p>
+        <h3>辨識定錨而不臆測欺騙 / Recognize anchoring without assuming deception</h3>
+        <p>
+          仲介提到其他買家出 950 萬及底價 980 萬，可能讓原本願出 920 萬的人開始考慮 960
+          萬。其他買家是否存在無法確定；講者主張以價值與成本判斷，而不是只求贏過別人。
+        </p>
+        <p>
+          Claims of NT$9.5 million competing offers and a NT$9.8 million minimum may draw a buyer from NT$9.2
+          million toward NT$9.6 million. The existence of those buyers is uncertain. The speaker argues for
+          judging value and costs instead of simply trying to beat others.
+        </p>
+        <h3>看總價如何影響長期負擔 / Connect purchase price with longer-term affordability</h3>
+        <p>
+          從 910 萬到 980 萬增加 70 萬；在貸款八成的假設下，自備款增加 14 萬、貸款增加 56
+          萬。買來出租也須留意租金未必跟著上漲，不能只看成交當下的興奮。
+        </p>
+        <p>
+          Moving from NT$9.1 million to NT$9.8 million adds NT$700,000. With 80% financing, the extra down
+          payment is NT$140,000 and the extra loan is NT$560,000. Rental income may not rise with the purchase
+          price, so the excitement of closing is not enough.
+        </p>
+        <h3>按同一假設比較方案 / Compare scenarios under the same assumptions</h3>
+        <p>
+          來源示範用 Deal Tools 比較 910 萬、950 萬與 980 萬，假設利率 2.5%、30 年、三年寬限期與月租 23,000
+          元。理解重點是比較寬限期前後負擔；來源未列最終月付金，不能把提問中的 5,000 或 10,000 元當答案。
+        </p>
+        <p>
+          The source demonstrates Deal Tools comparisons at NT$9.1 million, NT$9.5 million, and NT$9.8
+          million, assuming 2.5% interest, a 30-year term, a three-year interest-only period, and NT$23,000
+          monthly rent. The focus is comparing affordability across the two payment phases. No final monthly
+          figures are supplied; NT$5,000 and NT$10,000 are questions, not results.
+        </p>
+      </section>
+      <section>
+        <h2>Knowledge and Language Practice 理解與語言練習</h2>
+        <h3>Q1</h3>
+        <p>案例中的 1,038 萬、910 萬、920 萬各代表什麼？</p>
+        <h3>Q2</h3>
+        <p>用英文問一句，確認拒絕出價的是屋主，還是仲介自己判斷。</p>
+        <h3>Q3</h3>
+        <p>
+          選擇保留可能性且合文法的句子：A. The agent may thinks the price is too low. B. The agent may think
+          the price is too low.
+        </p>
+        <h3>Q4</h3>
+        <p>來源的 5,000 元與 10,000 元是最終月付金差額嗎？說明理由。</p>
+        <h3>Q5</h3>
+        <p>在貸款八成的假設下，買價增加 70 萬，額外自備款與貸款各是多少？</p>
+        <h3>Q6</h3>
+        <p>列出至少三項讓同社區房屋不能直接比價的條件，並用一個英文句子說明。</p>
+        <h3>Q7</h3>
+        <p>以英文設定不再加價的界線，提供一個成本理由，不指控仲介。</p>
+      </section>
+      <section>
+        <h2>Real-world Application 真實情境應用</h2>
+        <p>
+          虛構中性情境：你正在比較兩間屋況不同的住宅。先列整修、可用自備款與可承擔月付金，再用三句英文完成確認資訊、說明出價理由與提出可接受條件。未取得完整利率與還款條件前，不捏造月付金；不以本練習作投資或法律建議。
+        </p>
+      </section>
+      <section>
+        <h2>Review 本課複習</h2>
+        <p>
+          先問資訊來源，再檢查比較條件；先分辨可能性，再做價格判斷。英文重點是 make an offer、may、does not
+          mean、remember to 與 walk away；數字重點是總價、自備款、本金、月付金不可混用。
+        </p>
+      </section>
+      <section>
+        <h2>Answer Key 參考答案</h2>
+        <h3>Q1</h3>
+        <p>1,038 萬是開價；910 萬是買方初始出價；920 萬是買方後來願意提高的價格。</p>
+        <h3>Q2</h3>
+        <p>
+          Sample answer: Did the owner personally reject this offer, or do you think they wouldn't accept it?
+          可接受較委婉的 Could you clarify whether ...?，但須保留事件與判斷的區別。
+        </p>
+        <h3>Q3</h3>
+        <p>B。may 後接原形 think；may 保留可能性，不能推論已證實仲介沒有轉達。</p>
+        <h3>Q4</h3>
+        <p>不是。這兩個數字是講者詢問寬限期後會增加多少的例子；來源未列出最終試算結果。</p>
+        <h3>Q5</h3>
+        <p>70 萬 × 20% = 14 萬自備款；70 萬 × 80% = 56 萬貸款，兩者合計 70 萬；這不是月付金差額。</p>
+        <h3>Q6</h3>
+        <p>
+          車位、屋況、採光、漏水、樓層、面向或成交時間，任三項皆可。Sample answer: We need to compare parking,
+          condition, and renovation costs before comparing prices. 不可推定案例房屋必有漏水。
+        </p>
+        <h3>Q7</h3>
+        <p>
+          Sample answer: Our offer reflects the renovation costs. We are not prepared to raise it. If that
+          does not work, we will keep looking. 其他自然版本亦可，但須有成本理由及清楚界線。
+        </p>
+      </section>
+      <section>
+        <h2>Bilingual Reader 中英對照全文</h2>
+        <section class="lesson-bilingual-section" data-section-index="1">
+          <h3>
+            第 1 章節：房市冷清沒生意，買方想出價房仲卻愛理不理？ / Chapter 1: Why Ignore a Buyer in a Slow
+            Market?
+          </h3>
+          <article class="lesson-bilingual-pair" data-pair-index="1">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">現在房市這麼冷，很多房仲都在喊沒有生意，結果，竟然有房仲，客戶都已經想買房子了，他卻愛理不理？！</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">The housing market is so slow that many agents are complaining about having no business, yet some agents barely respond even when a client already wants to buy a home!</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="2">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">最近，我剛好看到 PTT 的文章，真的蠻有意思的，有個網友看上了一間房子，屋主開價 1,038 萬。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Recently, I came across an interesting post on PTT: someone had found a home they liked, and the owner was asking NT$10.38 million.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="3">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">他去查了實價登錄，發現同社區半年前才成交 900 萬出頭，所以，他就跟房仲出價 910 萬。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">They checked actual transaction records and found that a home in the same community had sold for just over NT$9 million six months earlier, so they offered NT$9.1 million through the agent.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="4">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">結果，你知道房仲怎麼回他嗎？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Do you know how the agent responded?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="5">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">直接跟他說：「太低了啦，屋主不可能賣你！」</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">The agent simply said, &quot;That's too low; the owner would never sell to you at that price!&quot;</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="6">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">後來這個買方願意加到 920 萬，甚至說要正式下斡旋，結果房仲竟然已讀不回，根本就懶得理他！</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">The buyer later offered to raise the price to NT$9.2 million and even wanted to submit a formal offer through the brokerage's negotiation process, but the agent read the message and never replied!</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="7">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">更奇怪的是，這一間房子後來還從售屋網站上面下架，但是那個買方調查後卻說，房子根本就沒有賣掉啊！</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Even more strangely, the home was later removed from the listing website, but the buyer said that, after looking into it, they found it had not been sold!</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="8">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">這到底是怎麼回事呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">What on earth was going on?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="9">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">真的非常奇怪，對不對？！</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">It's really strange, isn't it?</p>
+            </div>
+          </article>
+        </section>
+        <section class="lesson-bilingual-section" data-section-index="2">
+          <h3>
+            第 2 章節：殘酷現實：你付服務費，房仲就一定站在你這邊嗎？ / Chapter 2: Does Paying a Fee Put the
+            Agent on Your Side?
+          </h3>
+          <article class="lesson-bilingual-pair" data-pair-index="1">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">不過先申明喔，今天我不是要幫買方講話，也不是要替仲介護航。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Let me make this clear first: I'm not here to take the buyer's side or defend the agent.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="2">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">買方出價 910 萬，到底合不合理？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Was the buyer's NT$9.1 million offer reasonable?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="3">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">我們等一下也會來討論一下。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">We'll discuss that in a moment.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="4">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">但是你不覺得，嫌人家出價低是一回事，不過客戶想要出價都不理他，又是另外一回事？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">But don't you think rejecting a low price is one thing, while ignoring a client who wants to make an offer is another?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="5">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">所以，今天我們就來聊聊，這背後到底是怎麼回事呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">So today, let's talk about what might be going on behind all this.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="6">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">首先，房仲到底在幫誰呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">First, who is the agent actually helping?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="7">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">你找他看房子、跟他討論價格，很自然會覺得說，他應該是來幫我買房的吧？！</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">When you ask an agent to show you homes and discuss prices, you naturally think they're there to help you buy a home, right?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="8">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">尤其是想到，買房你還要付他一筆服務費，你一定更希望房仲幫你談一個便宜的價格，對不對？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Especially when you remember that you also have to pay a service fee, you would certainly hope the agent could negotiate a lower price for you, wouldn't you?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="9">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">可是，如果我們把畫面切到屋主那一邊，想法肯定是剛好相反的。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">But if we switch to the owner's perspective, the thinking is bound to be exactly the opposite.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="10">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">他也會想說：「我有付服務費，你應該幫我賣個好價格吧！」</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">The owner would also think, &quot;I'm paying a service fee, so you should help me get a good selling price!&quot;</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="11">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">你看，這是不是很尷尬呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">You see how awkward that is?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="12">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">買方想要省錢、賣方想要多賺錢，中間卻是同一家仲介在溝通。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">The buyer wants to save money, the seller wants to earn more, and the same brokerage is communicating between them.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="13">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">而且你不知道屋主到底有多急著賣。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">And you don't know how urgently the owner needs to sell.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="14">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">屋主也不知道，你是真的只想出這個價格嗎？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">The owner also doesn't know whether this is really the only price you're willing to offer.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="15">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">還是，其實還能再加呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Or could you actually offer more?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="16">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">仲介夾在中間，往往比你們任何一邊都更清楚，現在談到哪一個階段了，有沒有機會接近成交了！</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">The agent in the middle often knows better than either side how far negotiations have progressed and whether a deal is getting close!</p>
+            </div>
+          </article>
+        </section>
+        <section class="lesson-bilingual-section" data-section-index="3">
+          <h3>
+            第 3 章節：揭秘房仲心態：為什麼你願意出價，他卻懶得幫你談？ / Chapter 3: Why an Agent Might Not
+            Negotiate Your Offer
+          </h3>
+          <article class="lesson-bilingual-pair" data-pair-index="1">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">所以，如果以實務經驗來講，仲介不一定偏袒誰，但是，你一定要分清楚，他是想促成一筆交易，而你想要買一個划算、負擔得起的房子，這個是兩回事哦！</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">So, speaking from practical experience, an agent doesn't necessarily favor either side, but you need to distinguish their desire to close a deal from your desire to buy a good-value home you can afford!</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="2">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">仲介希望成交，不代表他的利益跟你的利益會完全一樣。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">An agent's wish to close a deal does not mean their interests are exactly the same as yours.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="3">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">那重點就來了，既然成交才能賺錢，你都願意出價了，他為什麼還可以不積極幫你談呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">That brings us to the key question: if agents only earn money when a deal closes, why wouldn't an agent actively negotiate for you when you're ready to make an offer?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="4">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">是他覺得真的沒有機會？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Does the agent think there is genuinely no chance?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="5">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">還是你的價格讓他覺得不值得花時間呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Or does your price make the negotiation seem not worth the time?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="6">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">你想想看，房仲每天可能要帶好幾組客戶看房子，他的時間也是成本哦！</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Think about it: an agent may show homes to several groups of clients every day, and their time has a cost too!</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="7">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">所以，假設屋主開價 1,038 萬，心裡就是希望至少賣 980 萬，結果今天剛好有個買方跑出來談 910 萬，整整差了 70 萬。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Suppose the owner asks NT$10.38 million and hopes to get at least NT$9.8 million, but a buyer comes along offering NT$9.1 million, leaving a gap of NT$700,000.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="8">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">房仲可能就會想說，這個價格屋主根本就不可能接受，我花時間去談，最後也是白忙一場。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">The agent might think the owner would never accept that price, so spending time negotiating would ultimately achieve nothing.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="9">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">所以，他乾脆把時間留下來，給那一些比較願意加價、比較有機會成交的買方。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">So the agent simply saves that time for buyers who are more willing to raise their offers and more likely to close.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="10">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">這其實就是在篩選客人。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">This is effectively a way of screening clients.</p>
+            </div>
+          </article>
+        </section>
+        <section class="lesson-bilingual-section" data-section-index="4">
+          <h3>
+            第 4 章節：房仲不願透露的店內生態：什麼叫做把房子留在手上賣？ / Chapter 4: Keeping a Listing
+            Within One Brokerage
+          </h3>
+          <article class="lesson-bilingual-pair" data-pair-index="1">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">但，還有另外一種可能，就是房仲可能想把這個房子留在自己手上賣。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">But there's another possibility: the agent may want to keep the sale within their own operation.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="2">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">這個部分就比較是房仲的生態了，有機會我們再細聊。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">That has more to do with how the brokerage business works, and we can discuss it further another time.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="3">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">簡單的說，他很可能就是不太願意讓其他房仲、或其他的買方去介入，為什麼呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Simply put, the agent may be reluctant to involve other agents or buyers; why might that be?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="4">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">因為如果買方跟賣方都由自己服務的話，就有機會二邊的服務費，都在自己的店裡成交。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Because if the same office serves both the buyer and the seller, it may be able to keep the service fees from both sides.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="5">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">當然啦，我不是說這個案例，房仲一定是這樣子。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Of course, I'm not saying that this is definitely what the agent in this case was doing.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="6">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">畢竟沒有人有證據，所以也不能隨便亂講。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">After all, nobody has evidence, so we can't make unsupported accusations.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="7">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">但是我覺得這件事情最奇怪的地方，根本不是買方出了 910 萬太低，而是人家後來都加價到了 920 萬了，也明確表示想要正式下斡旋，房仲竟然還可以已讀不回。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">But to me, the strangest part isn't whether NT$9.1 million was too low; it's that the agent still left the buyer on read after the buyer raised the offer to NT$9.2 million and clearly asked to make a formal offer.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="8">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">你覺得這樣合理嗎？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Do you think that's reasonable?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="9">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">房仲可以覺得價格太低，也可以告訴買方屋主不願意賣，但問題是，這個價格到底有沒有真的拿去跟屋主談呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">The agent can consider the price too low or tell the buyer the owner won't sell, but was the offer actually discussed with the owner?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="10">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">還是從頭到尾都只是房仲自己覺得不可能成交？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Or was it simply the agent's own assumption all along that no deal was possible?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="11">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">這才是我覺得這一件事情最值得討論的地方。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">That's what I think is most worth discussing about this case.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="12">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">所以，下次當房仲跟你說：「這個價格屋主不會賣啦！」</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">So next time an agent tells you, &quot;The owner won't sell at that price!&quot;</p>
+            </div>
+          </article>
+        </section>
+        <section class="lesson-bilingual-section" data-section-index="5">
+          <h3>
+            第 5 章節：房仲說「屋主不可能賣」，教你用一招測出這句話是真是假！ / Chapter 5: Ask Whether the
+            Owner Actually Rejected the Offer
+          </h3>
+          <article class="lesson-bilingual-pair" data-pair-index="1">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">你先不要急著相信，也不用急著跟他爭辯。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Don't rush to believe it, and don't rush to argue either.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="2">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">因為這一句話有二種可能，第一種，房仲真的跟屋主確認過了，屋主就是不願意降價。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">There are two possibilities behind that statement: first, the agent really checked with the owner, and the owner simply refuses to lower the price.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="3">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">但第二種呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">But what about the second possibility?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="4">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">可能就是房仲自己覺得價格太低，根本沒有拿去跟屋主談。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">The agent may personally think the price is too low and may never have discussed it with the owner.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="5">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">那你要怎麼分辨呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">How can you tell the difference?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="6">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">其實也很簡單，你可以直接問他說：「這個是屋主親自拒絕的呢？還是，你覺得他不會接受呢？」</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">It's actually simple: ask directly, &quot;Did the owner personally reject this offer, or do you think they wouldn't accept it?&quot;</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="7">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">當然，比較好的做法，你也可以用正式的要約書或是斡旋的方式，提出你的價格。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Of course, another, better approach is to submit your price in a formal written offer or through the brokerage's negotiation process.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="8">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">記得把出價的金額、條件、期限，還有跟房仲的對話紀錄，都保留下來。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Remember to keep records of the offer amount, conditions, deadline, and your conversations with the agent.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="9">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">因為，口頭嘴炮講一講，跟正式提出文件、購買條件，這是兩回事！</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Because talking casually is very different from formally submitting documents and purchase conditions!</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="10">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">當然，正式出價一定有法律效力，所以，內容一定要看清楚再簽。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Of course, a formal offer definitely has legal effect, so be sure to read its contents carefully before signing.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="11">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">但是講到這裡，我就要提醒大家一件事情了。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">But at this point, I need to remind everyone of something.</p>
+            </div>
+          </article>
+        </section>
+        <section class="lesson-bilingual-section" data-section-index="6">
+          <h3>
+            第 6 章節：拿實價登錄殺價一定買便宜？小心這盲點讓你反而買貴！ / Chapter 6: The Limits of Recorded
+            Transaction Prices
+          </h3>
+          <article class="lesson-bilingual-pair" data-pair-index="1">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">我們前面一直在討論房仲有沒有問題，不過，接下來我要講的，可能很多買方不愛聽。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">So far, we've been discussing whether the agent did anything wrong, but many buyers may not like what I'm about to say next.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="2">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">因為，這個買方拿實價登錄，出 910 萬，真的就代表他出價合理嗎？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Does offering NT$9.1 million based on transaction records really mean that the buyer's offer was reasonable?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="3">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">你想想看，這個買方為什麼敢出 910 萬呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Think about it: why did this buyer feel confident offering NT$9.1 million?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="4">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">因為，他查到同一個社區半年前有一間房子，900 萬出頭就成交了，而且，只差兩個樓層哦。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Because they found that a home in the same community had sold for just over NT$9 million six months earlier, only two floors away.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="5">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">所以他就會覺得：「我出 910 萬，應該很合理吧！」</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">So they would think, &quot;Offering NT$9.1 million should be quite reasonable!&quot;</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="6">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">但是我跟你講，這可能就是很多人買房最容易犯的錯誤！</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">But let me tell you: this may be one of the most common mistakes people make when buying a home!</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="7">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">你可能會以為，同一個社區房價就應該差不多嗎？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">You might assume homes in the same community should cost roughly the same.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="8">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">那還真的不一定！</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">That really isn't necessarily the case!</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="9">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">比如說，一間有車位、一間沒有車位，價格能一樣嗎？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">For example, can one home with a parking space cost the same as one without?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="10">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">一間採光好、屋況漂亮，另一間漏水、還要花錢整理，你覺得能直接比嗎？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">If one home has good natural light and is in great condition while another leaks and needs renovation, do you think you can compare them directly?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="11">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">甚至，同一個大樓，樓層、面向不同，價格都可能也會差很多。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Even within the same building, different floors and orientations can make a big difference to the price.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="12">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">更何況，你看到的實價登錄，只是半年前的那一筆成交。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Besides, the transaction record you're looking at is just one sale from six months ago.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="13">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">所以我一直跟大家講，實價登錄是參考的答案，而且，它是落後的指標，不是標準答案。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">That's why I keep saying transaction records are a reference point and a lagging indicator, not a definitive answer.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="14">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">但，還有一件更重要的事情，你以為拿實價登錄殺價，就一定能夠買到便宜嗎？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">But there's something even more important: do you think negotiating with transaction records always gets you a bargain?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="15">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">我跟你說，搞不好剛好相反，你可能還會買貴了。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Let me tell you, the opposite might happen: you could end up overpaying.</p>
+            </div>
+          </article>
+        </section>
+        <section class="lesson-bilingual-section" data-section-index="7">
+          <h3>
+            第 7 章節：房市下跌期出價大忌！為什麼看過去行情會多當冤大頭？ / Chapter 7: How Past Prices Can
+            Lead to Overpaying
+          </h3>
+          <article class="lesson-bilingual-pair" data-pair-index="1">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">為什麼我說，看實價登錄買房，反而可能讓你買貴呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Why do I say that buying based on transaction records could actually make you overpay?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="2">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">我舉一個例子，你就懂了。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Let me give you an example, and you'll understand.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="3">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">假設半年前，同一個社區有一間房子成交 1,000 萬，結果現在房市變冷了、買方變少了。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Suppose a home in the same community sold for NT$10 million six months ago, but the market has since cooled and there are fewer buyers.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="4">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">有些屋主急著用錢，開始願意降價了，搞不好人家心裡已經願意 900 萬就賣了，可是，你就是不知道啊！</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Some owners urgently need cash and are becoming willing to lower their prices; one might already accept NT$9 million, but you simply don't know!</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="5">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">你看到實價登錄 1,000 萬，就覺得自己出了 950 萬，已經殺了 50 萬，很厲害了，對不對？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">You see a recorded price of NT$10 million and feel that offering NT$9.5 million means you've negotiated an impressive NT$500,000 discount, right?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="6">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">結果呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">And what happens?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="7">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">你可能還比屋主願意接受的價格，多出了 50 萬。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">You may still be offering NT$500,000 more than the owner would accept.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="8">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">這就是很多買方容易忽略的問題。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">This is a problem many buyers overlook.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="9">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">實價登錄告訴你的，是過去成交多少，不代表這一間房子現在值多少，更不代表屋主願意賣多少。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Transaction records tell you what sold for how much in the past, not what this home is worth now, and certainly not what its owner would accept.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="10">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">所以，房市上漲的時候，你拿過去的價格去出價，可能永遠買不到！</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">So when the market is rising, offering past prices may never get you a home!</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="11">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">但是，房價下跌的時候呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">But what about when housing prices are falling?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="12">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">你還拿過去的高價當標準，那就可能真的買太貴了！</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">If you still use past high prices as your benchmark, you might really overpay!</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="13">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">更可怕的是什麼呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">What's even more worrying?</p>
+            </div>
+          </article>
+        </section>
+        <section class="lesson-bilingual-section" data-section-index="8">
+          <h3>第 8 章節：房仲說「已經有人出更高了」！ / Chapter 8: Claims of Higher Competing Offers</h3>
+          <article class="lesson-bilingual-pair" data-pair-index="1">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">當房仲跟你說，已經有人出更高的時候，你會不會一緊張，就自己加價了呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">When an agent says someone has already offered more, will you get nervous and raise your own offer?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="2">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">好，我們再切回剛剛那個 PTT 的案例，買方原本出 910 萬，後來願意加到 920 萬。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Let's return to that PTT case: the buyer originally offered NT$9.1 million and later agreed to raise it to NT$9.2 million.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="3">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">結果房仲跟他說，已經有好幾組客人出到 950 萬了，屋主底價是 980 萬。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">The agent then said that several other buyers had already offered NT$9.5 million and that the owner's minimum was NT$9.8 million.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="4">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">請問如果是你，聽到這句話會不會開始緊張了呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">If you heard that, would you start getting nervous?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="5">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">心裡想說：「完了，這間房子我真的還蠻喜歡的，萬一被別人買走了，怎麼辦呢？」</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">You might think, &quot;Oh no, I really like this home; what if someone else buys it?&quot;</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="6">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">「那我是不是乾脆出 960 萬，搶在別人前面呢？」</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">&quot;Should I just offer NT$9.6 million to get ahead of everyone else?&quot;</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="7">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">你看，原本你只想出 920 萬，現在卻開始考慮 960 萬，一下子就多出了 40 萬。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">You see, you originally only wanted to offer NT$9.2 million, but now you're considering NT$9.6 million, an increase of NT$400,000 all at once.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="8">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">這在談判裡面，就叫做定錨效應。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">In negotiation, this is called the anchoring effect.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="9">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">房仲丟出 950 萬、980 萬兩個數字，你的注意力可能就被拉到這個價格區間了。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">The agent throws out NT$9.5 million and NT$9.8 million, and your attention may get pulled into that price range.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="10">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">但問題是，那幾組 950 萬的買方到底是不是真的存在呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">But do those buyers offering NT$9.5 million actually exist?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="11">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">我們根本就無法確定。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">We simply can't be sure.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="12">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">當然，也不能直接說房仲在騙人。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Of course, we can't simply say the agent is lying either.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="13">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">可是你要記住，有人出 950 萬，不代表你就應該出 960 萬哦！</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">But remember, someone else's NT$9.5 million offer doesn't mean you should offer NT$9.6 million!</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="14">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">買房最怕的，就是因為擔心被別人搶走，結果自己越加越高。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">One of the biggest risks in buying a home is raising your offer higher and higher because you're afraid someone else will get it.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="15">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">那如果今天換的是我，我會怎麼跟房仲談呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">If it were me, how would I negotiate with the agent?</p>
+            </div>
+          </article>
+        </section>
+        <section class="lesson-bilingual-section" data-section-index="9">
+          <h3>
+            第 9 章節：買房談判高手的反向操作：一句話直接破解催促加價！ / Chapter 9: Responding Without
+            Automatically Raising Your Offer
+          </h3>
+          <article class="lesson-bilingual-pair" data-pair-index="1">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">我跟你講，我絕對不會跟房仲說，有人出 950 萬，就急著加價。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Let me tell you, I certainly wouldn't rush to raise my offer just because the agent said someone had offered NT$9.5 million.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="2">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">我反而會跟房仲講說：「喔，如果已經有人出 950 萬了，那這樣很好，你們先趕快去跟那一組客人談。」</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Instead, I'd tell the agent, &quot;Oh, if someone has already offered NT$9.5 million, that's good; please go ahead and negotiate with that buyer first.&quot;</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="3">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">為什麼我要這樣講呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Why would I say that?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="4">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">因為，我買房子最在意的，不是有沒有搶贏別人，而是這一間房子到底值不值得我出這個價格。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Because when I buy a home, what matters most isn't beating someone else to it, but whether the home is worth that price to me.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="5">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">而且，我也不會傻傻的跟房仲講說，我最高可以出到多少。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">And I wouldn't foolishly tell the agent the highest price I could pay.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="6">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">因為，實際上你可能都根本搞不清楚，買下這間房子，你會花下多少成本。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">In fact, you may not even have a clear idea of the total cost of buying the home.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="7">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">像我，會把附近的成交行情、屋況，還有需要整理的費用，都算清楚，再提出我願意接受的價格跟條件。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">For example, I work through nearby transaction prices, the home's condition, and renovation costs before putting forward a price and terms I can accept.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="8">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">所以，如果房仲還是說太低，那沒有關係，我就繼續再看下一間。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">So if the agent still says it's too low, that's fine; I'll keep looking at other homes.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="9">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">房子一大堆嘛，大繼承潮、少子化，這兩個議題被炒得火熱，那我就覺得很奇怪了。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">There are plenty of homes, and with so much discussion of the coming wave of inheritance and declining birth rates, I find this strange.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="10">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">房子又不是只有這一間，幹嘛非買不可呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">This isn't the only home out there, so why must you buy it?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="11">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">你要記得，買房談判真正有籌碼的，不是敢出低價，而是敢不買！</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Remember, real leverage in homebuying negotiations isn't the courage to offer a low price; it's the willingness to walk away!</p>
+            </div>
+          </article>
+        </section>
+        <section class="lesson-bilingual-section" data-section-index="10">
+          <h3>
+            第 10 章節：談判桌上真正的籌碼是什麼？不是出低價，而是這四個字！ / Chapter 10: Work Out What the
+            Home Is Worth to You
+          </h3>
+          <article class="lesson-bilingual-pair" data-pair-index="1">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">所以問題就來了，910 萬、950 萬、980 萬，到底哪一個價格才值得買呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">So here's the question: at NT$9.1 million, NT$9.5 million, or NT$9.8 million, which price makes the home worth buying?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="2">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">這就不是靠感覺了，而是要真的拿出來算！</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">This isn't about relying on feelings; you really need to do the calculations!</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="3">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">好，我們繼續回到案例中的這個房子。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Let's return to the home in this case.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="4">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">如果今天換成你，就像是今天 PTT 上面這個例子，你看房，你想出 910 萬，有人出 950 萬，仲介說屋主底價是 980 萬，你到底要出多少？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Suppose you're in the same position as the buyer in the PTT example: you want to offer NT$9.1 million, someone else offers NT$9.5 million, and the agent says the owner's minimum is NT$9.8 million; how much should you offer?</p>
+            </div>
+          </article>
+        </section>
+        <section class="lesson-bilingual-section" data-section-index="11">
+          <h3>
+            第 11 章節：「只差一點點就買了」？算給你看差 70 萬對現金流的長期影響！ / Chapter 11: The Cash-flow
+            Impact of an Extra NT$700,000
+          </h3>
+          <article class="lesson-bilingual-pair" data-pair-index="1">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">房仲可能會跟你說：「950 萬跟 980 萬才差 30 萬，喜歡就買下去啦！」</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">The agent might say, &quot;NT$9.5 million and NT$9.8 million are only NT$300,000 apart; if you like it, just buy it!&quot;</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="2">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">但是你千萬要記得，買房最怕的就是這一種「只差一點點」的心態。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">But remember, that &quot;it's only a little more&quot; mindset is one of the biggest dangers when buying a home.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="3">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">你想想看，從 910 萬加到 980 萬，整整多了 70 萬。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Think about it: going from NT$9.1 million to NT$9.8 million adds a full NT$700,000.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="4">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">假設銀行貸款 8 成，你不只要多準備 14 萬的自備款，貸款也要多出 56 萬，未來每個月的房貸跟利息都會增加。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Assuming the bank lends 80% of the purchase price, you need an extra NT$140,000 for the down payment and an extra NT$560,000 in borrowing, increasing your future monthly mortgage payments and interest costs.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="5">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">所以，如果你是買來收租，那就更要小心了。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">So if you're buying to rent the home out, you need to be even more careful.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="6">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">因為房價越高，你的租金不一定可以馬上跟著增加。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Because a higher purchase price doesn't necessarily mean your rent can immediately rise too.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="7">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">你的投報率跟現金流，可能就會越來越差。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Your return on investment and cash flow could get worse and worse.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="8">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">所以我買房之前，一定會把這幾個價格拿出來做試算。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">That's why I always run calculations at these different prices before buying.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="9">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">根據我買過多間房的經驗跟你講，買房最熱血的時候，只有在成交簽約的那一刻。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Speaking from my experience of buying several properties, the most exciting moment is the moment you close the deal and sign.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="10">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">你一定要相信我，成交不是勝利，買在自己負擔得起、算得過去的價格，才有意義！</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Believe me, closing the deal isn't victory; what matters is buying at a price you can afford and that makes financial sense!</p>
+            </div>
+          </article>
+        </section>
+        <section class="lesson-bilingual-section" data-section-index="12">
+          <h3>
+            第 12 章節：實戰試算：910 萬 vs 980 萬，寬限期結束後每個月差多少？ / Chapter 12: Comparing
+            Payments Before and After the Interest-only Period
+          </h3>
+          <article class="lesson-bilingual-pair" data-pair-index="1">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">那到底要怎麼算呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">So how exactly do you calculate it?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="2">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">接下來，我直接用我常用的軟體 Deal Tools，實際算給你看！</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Next, I'll show you the calculations using Deal Tools, a tool I often use!</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="3">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">假設，這個房子我們分別用 910 萬、950 萬跟 980 萬來買，貸款 8 成、利率 2.5%、30 年年限、再加上 3 年寬限期。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Suppose we compare buying this home for NT$9.1 million, NT$9.5 million, and NT$9.8 million, with 80% financing, a 2.5% interest rate, a 30-year term, and a three-year interest-only period.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="4">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">如果，這間房子是買來出租的，我們也把租金給它填上去，先假設一個月是 23,000 元。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">If we're buying the home to rent it out, we also enter the rent, assuming NT$23,000 a month for now.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="5">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">大家都知道，寬限期內只繳利息。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">As everyone knows, you pay only interest during the interest-only period.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="6">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">等到 3 年寬限期結束，開始還本金的時候，每個月的房貸一定是增加。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Once the three-year interest-only period ends and principal repayment begins, the monthly mortgage payment will increase.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="7">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">但問題是，到底會增加多少呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">But the question is, how much will it increase?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="8">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">一個月多了 5,000 塊？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">By NT$5,000 a month?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="9">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">還是多了 10,000 塊呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Or by NT$10,000?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="10">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">透過 Deal Tools，你就可以直接看到寬限期前後的月付金到底差多少。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">With Deal Tools, you can directly see the difference in monthly payments before and after the interest-only period ends.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="11">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">租金扣掉房貸後，還剩下多少錢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">How much is left after subtracting the mortgage payment from the rent?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="12">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">而且不只這樣，我們還可以用物件並排比較的方式，把 910 萬、950 萬、980 萬這三個方案放在一起看看。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">What's more, we can compare properties side by side and view the NT$9.1 million, NT$9.5 million, and NT$9.8 million scenarios together.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="13">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">哪一個價格，自備款比較少？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Which price requires a smaller down payment?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="14">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">寬限期結束後，每個月多繳多少錢呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">How much more do you pay each month after the interest-only period ends?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="15">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">租金、現金流跟投報率，又差多少呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">And how do the rent, cash flow, and return on investment differ?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="16">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">全部攤開來看，一目了然！</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Lay it all out, and the differences become clear!</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="17">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">所以，買房不是看你殺了多少錢，而是要看清楚，這個價格到底適不適合你。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">So buying a home isn't about how much you negotiate off the price; it's about understanding whether that price suits you.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="18">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">你現在正在看的房子，也可以到影片下方打開 Deal Tools，自己免費試算一下！</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">For the home you're currently considering, you can also open Deal Tools below the video and run your own calculations for free!</p>
+            </div>
+          </article>
+        </section>
+        <section class="lesson-bilingual-section" data-section-index="13">
+          <h3>
+            第 13 章節：真正厲害的買方該懂的事：什麼價格該買，什麼價格該放手！ / Chapter 13: Knowing When to
+            Buy and When to Walk Away
+          </h3>
+          <article class="lesson-bilingual-pair" data-pair-index="1">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">好，今天我們看到了這個案例，那你覺得，這個案例中的房仲，有沒有讓你覺得不舒服呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Now that we've looked at this case, did the agent's behavior make you uncomfortable?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="2">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">我倒是認為，買方願意出價，房仲至少應該把事情交代清楚，而不是讓人家一直等消息。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">I think that when a buyer wants to make an offer, the agent should at least explain the situation clearly rather than leave them waiting indefinitely.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="3">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">但是話又說回來，買方拿著實價登錄，就認為自己出 910 萬一定合理嗎？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">But then again, can a buyer assume NT$9.1 million is definitely reasonable just because they have transaction records?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="4">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">那也不一定。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Not necessarily.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="5">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">所以，我一直跟大家講，買房最重要的，不是你到底跟屋主殺了多少錢，而是你有沒有看懂行情、算清楚成本，還有，這一間房子到底值不值得買呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">So, as I keep saying, what matters most in buying a home isn't how much you bargain off the owner's price, but whether you understand the market, have worked out the costs, and think the home is worth buying.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="6">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">真正厲害的買方，不是殺價最狠的人，而是知道什麼價格可以買、什麼價格該放手的人！</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">A truly capable buyer isn't the toughest bargainer, but someone who knows at what price to buy and when to walk away!</p>
+            </div>
+          </article>
+        </section>
+        <section class="lesson-bilingual-section" data-section-index="14">
+          <h3>
+            第 14 章節：結尾互動：面對這間房子，換作是你會怎麼出價？ / Chapter 14: What Would You Offer?
+          </h3>
+          <article class="lesson-bilingual-pair" data-pair-index="1">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">最後，我想問問大家，一間開價 1,038 萬的房子，同社區半年前 900 萬出頭就成交了，如果今天換成是你，你會出 910 萬、950 萬，還是乾脆就不買呢？</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Finally, let me ask you: if a home is listed at NT$10.38 million and another home in the same community sold for just over NT$9 million six months earlier, would you offer NT$9.1 million, NT$9.5 million, or simply not buy?</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="2">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">留言告訴我！</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Tell me in the comments!</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="3">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">我也很想聽聽看，房仲朋友怎麼看這件事情！</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">I'd also really like to hear what real estate agents think about this!</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="4">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">還有，如果你正在看房子，記得用影片下方的 Deal Tools 免費試算，先把房貸、寬限期跟現金流算清楚。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Also, if you're looking for a home, remember to use Deal Tools below the video for a free calculation and first work out the mortgage payments, interest-only period, and cash flow.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="5">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">先算清楚，再決定要不要買。</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">Do the calculations first, then decide whether to buy.</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="6">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">我是美金哥，跟著我一起用不同的視角，看見房市真相！</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">I'm Meijin Ge; join me in looking at the housing market from a different perspective!</p>
+            </div>
+          </article>
+          <article class="lesson-bilingual-pair" data-pair-index="7">
+            <div class="lesson-language-block lesson-chinese">
+              <span class="language-label">繁體中文</span>
+              <p lang="zh-Hant">我們下一集見，Bye Bye！</p>
+            </div>
+            <div class="lesson-language-block lesson-english">
+              <span class="language-label">English</span>
+              <p lang="en">See you in the next episode; bye-bye!</p>
+            </div>
+          </article>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

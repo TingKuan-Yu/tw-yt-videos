@@ -17,8 +17,8 @@ house\source\[課程檔名].md
 - 沿用 converted 的正文章節、中英配對及順序，不把兩種語言當成兩份正文重複處理。
 - 本文既有契約中的 `raw`、`raw_path` 與 `raw_sha256` 均指指定的 converted 檔案及其
   SHA-256，僅保留作為內部資料欄位名稱，不代表另有 `raw` 目錄或需要讀取原始來源。
-- 保留既有八檔課程、17 個 H2、HTML、TTS 與驗證契約。converted 採中文在前英文在後；
-  課程 Reader 則沿用本文件的英文在前中文在後，兩者使用相同配對，不重新翻譯。
+- 保留既有八檔課程、17 個 H2、HTML、TTS 與驗證契約。converted 與課程 Reader 均採
+  中文在前、英文在後，使用相同配對，不重新翻譯。
 
 本規格不把每份來源硬套成一般閱讀測驗或完整文法教科書。課程有四個互相配合的主軸；其中
 文法教學須由來源中確實值得學習的表達觸發，不為湊格式而生成：
@@ -278,20 +278,20 @@ ID、按鈕順序與文字，只依課程替換標題、教材內容、項目數
 
 ### 主要課程 Bilingual Reader 視覺契約
 
-- Markdown 最後的 Bilingual Reader 必須在主要 HTML 明確解析為英中配對，不得把整課
-  英中內容壓在單一 `<p>`，也不得只靠 Markdown 相鄰換行期待瀏覽器自動分組。每個 H3
+- Markdown 最後的 Bilingual Reader 必須在主要 HTML 明確解析為中英配對，不得把整課
+  中英內容壓在單一 `<p>`，也不得只靠 Markdown 相鄰換行期待瀏覽器自動分組。每個 H3
   建立一個 `.lesson-bilingual-section[data-section-index]`；每組使用
   `.lesson-bilingual-pair[data-pair-index]` `<article>`。
 - 每個 `.lesson-bilingual-pair` 內含且只含兩個 `.lesson-language-block`：先
-  `.lesson-english` 的 `<p lang="en">`，再 `.lesson-chinese` 的
-  `<p lang="zh-Hant">`。兩種語言不得混在同一個 `<p>`。
+  `.lesson-chinese` 的 `<p lang="zh-Hant">`，再 `.lesson-english` 的
+  `<p lang="en">`。兩種語言不得混在同一個 `<p>`。
 - Markdown Reader、主要 HTML 閱讀區及獨立 `bilingual.html` 必須由同一份已排序的 canonical
   pair list 產生，不得各自重新分句或翻譯。每個 pair 的英文、繁中、小節索引及小節內編號
   都是同一筆資料；修改切段後須一次重建三個表面，禁止只修其中一頁。
 - 語言區塊分別顯示不進入正文的 `English` 與 `繁體中文` 標籤。英文使用淡藍底與藍色
   左框，繁中使用暖米色底與金色左框；不得使用固定高度。
-- 桌面使用兩個等寬 `minmax(0,1fr)` 欄位，英文在左、繁中在右；660px 以下固定改為
-  英文在上、繁中在下。主頁閱讀區不得加入 TTS 控制器、`.speech-unit`、`data-lang`
+- 桌面使用兩個等寬 `minmax(0,1fr)` 欄位，繁中在左、英文在右；660px 以下固定改為
+  繁中在上、英文在下。主頁閱讀區不得加入 TTS 控制器、`.speech-unit`、`data-lang`
   或 `data-text`；朗讀功能只屬獨立 Bilingual Reader 頁。
 - 若 Markdown 有 M 個小節與 N 組配對，主要 HTML 必須恰有 M 個
   `.lesson-bilingual-section`、N 個 `.lesson-bilingual-pair`、N 個英文區塊及 N 個
@@ -754,7 +754,8 @@ function setPlaybackSettingsHidden(hidden) {
   DOM 綁定不得依賴 ID 自動成為全域變數。
 - 原生 button、select、range 與連結必須可用 Tab 導覽，並以 Enter／Space 或瀏覽器標準
   鍵盤操作啟用；不得用全域快捷鍵攔截輸入欄、搜尋欄或瀏覽器既有按鍵。
-- Bilingual Reader 每組嚴格依 `en-US → zh-TW` 排列；英文教學與本文導讀每個
+- Bilingual Reader 每組的 DOM、顯示及朗讀順序嚴格依 `zh-TW → en-US` 排列，
+  不得只用 CSS 改變視覺順序；英文教學與本文導讀每個
   `.teaching-point` 恰有一個 `zh-TW` 後接一個 `en-US` 單元，各單元依序包含對應語言的
   主題標題與說明，兩者皆須朗讀。整合術語頁不得套用此
   雙份說明結構，必須使用本文件定義的七個欄位級朗讀單元；`.term-meta` 不得加入 TTS。
@@ -1167,7 +1168,7 @@ house\converted\日本少子化房.md
 ### Bilingual Reader
 
 - 放在 Markdown 最後，以 raw 中辨識出的 primary source content 為基準，適用於 email、文件、文章、公告、政策、chat、transcript 及其他文字；完整依原順序呈現，不以摘要取代。
-- 從 converted 既有的中文／英文配對建立 Reader，只將顯示順序改為英文／繁體中文。
+- 從 converted 既有的中文／英文配對建立 Reader，維持繁體中文／英文的顯示順序。
   每個英文完整句對應同組中文，保留配對邊界，不再次翻譯、合併不同配對或重複加入中文正文。
 - 來源為 transcript 或 captions 時，只在 lesson 衍生內容中合併可由上下文明確確認的字幕
   斷行，整理成完整句或合理短段；不得回寫 raw、自然化改寫原話、猜測講者或移除有意義的
@@ -1175,11 +1176,11 @@ house\converted\日本少子化房.md
 - 優先沿用來源既有章節；沒有章節時，才依可確認的主題、事件、場景或說話目的轉折建立
   連續 H3 小節。小節須完整涵蓋來源且不得重疊、重排或遺漏；無法可靠命名時使用帶順序
   編號的中性 `Story Segment`，不得自行補寫情節。
-- 每個 H3 小節內的 Markdown 配對固定依序使用 `#### Pair N`、`**English**`、英文正文、
-  `**繁體中文**`、繁中正文；每個小節的 N 都從 1 連續編號。這份結構須與主要 HTML 及
+- 每個 H3 小節內的 Markdown 配對固定依序使用 `#### Pair N`、`**繁體中文**`、繁中正文、
+  `**English**`、英文正文；每個小節的 N 都從 1 連續編號。這份結構須與主要 HTML 及
   `bilingual.html` 的小節、配對編號、文字及順序逐組一致。
 - recap、digest、summary 或 learning notes 與主要內容重複時，不重複加入 Reader；前者放在工作摘要，primary source content 作為 Reader 基準。
-- 每個英文完整句或合理短段後立即放對應繁體中文，不以一段中文概括多段英文。
+- 每個繁中句子或合理短段後立即放對應英文，不以一段中文概括多段英文。
 - 保留適用的 email header、稱呼、結尾、作者、講者、訊息標籤、episode、小節、清單、表格、程式碼、命令、錯誤訊息、網址及重要格式。
 - 程式碼、log、URL 及命令不翻譯其內容；在相鄰中文說明其用途。
 - 未知講者使用來源既有標記；不得猜測姓名。
@@ -1406,7 +1407,7 @@ class、`data-field`、語言屬性或順序：
 ### Bilingual Reading
 
 - 完整呈現 Bilingual Reader。
-- 每組先朗讀一個英文句或合理短段，再朗讀只對應該單元的繁中翻譯。預設以來源的一個完整
+- 每組先朗讀繁中句子或合理短段，再朗讀只對應該單元的英文。預設以來源的一個完整
   句子或一個不可再分的短發言為一組；不得按固定數量把多個連續句子批次合併成大段。只有
   同一發言中拆開會破壞語意的片段才可合併，且須保持短小。
 - 對對話型 transcript 統計英文 pair 的句末標點數：中位數不得超過 2，至少 90% 的 pair
@@ -1418,8 +1419,8 @@ class、`data-field`、語言屬性或順序：
   重排或新增意思，也不得把一個中文長句複製給多個英文單元。
 - 每個來源小節使用可見雙語 H2；每組卡片顯示不朗讀的順序編號，並以穩定且唯一的
   `data-group-index` 與 `data-pair-id` 對應該小節及配對。
-- 每個 `.bilingual-pair` 鎖定為：pair number、直接含英文純文字的 `en-US` `.speech-unit`、
-  直接含繁中純文字的 `zh-TW` `.speech-unit`；兩個 speech unit 不建立內層 `<p>`。每個小節
+- 每個 `.bilingual-pair` 鎖定為：pair number、直接含繁中純文字的 `zh-TW` `.speech-unit`、
+  直接含英文純文字的 `en-US` `.speech-unit`；兩個 speech unit 不建立內層 `<p>`。每個小節
   的 pair number 從 1 連續編號，不重複、不跳號。
 - 標題、講者標籤、程式碼、log 及 URL 可顯示但不加入 TTS。
 
@@ -1845,7 +1846,9 @@ class、`data-field`、語言屬性或順序：
 11. 確認 Bilingual Reading 的小節、配對與來源順序同步，中英單元一對一、語系正確，且沒有
     摘要取代正文、跨小節重複或自行補寫的內容。從同一 canonical pair list 逐項驗證 Markdown、
     主要 HTML 與 `bilingual.html` 的小節數、pair 數、編號、英文及繁中全文完全相等；
-    Markdown 每個 H3 小節的 Pair、English 及繁中標籤與編號符合固定結構；
+    Markdown 每個 H3 小節依序使用 Pair、繁中及 English 標籤，編號符合固定結構；
+    主要 HTML 每組 DOM 與視覺順序均為繁中在前、英文在後，桌面繁中在左、窄螢幕繁中在上；
+    `bilingual.html` 每組 DOM 與顯示順序均為 `zh-TW → en-US`；
     `bilingual.html` 每個 `.speech-unit` 直接含純文字、沒有內層 `<p>`，且 `data-text`
     精確等於可見文字。
 12. 靜態檢查唯一 ID、合法 HTML、語言屬性、選聲、錯誤處理、搜尋、篩選及 DOM 綁定；
@@ -1876,7 +1879,8 @@ class、`data-field`、語言屬性或順序：
     中英皆讀進度總數為 `2 × (S + N)`，單語模式為 `S + N`。不得漏讀、重讀標題、
     朗讀分隔符或 H1，也不得改動正文配對、來源對應與正文編號。
     Bilingual Reader、英文教學與本文導讀測試播放、暫停、停止、
-    前後段、上／下 10 段、選聲、語速及三種 `readingMode`；逐頁確認單語模式不朗讀另一
+    前後段、上／下 10 段、選聲、語速及三種 `readingMode`；確認 Bilingual Reader 在中英皆讀
+    模式依每組 `zh-TW → en-US` 接續朗讀，逐頁確認單語模式不朗讀另一
     語言，並在第 1、5、11 與最後一個 eligible unit 測試 ±10 clamp。
     比較 `bilingual.html`、`teacher.html` 與 `content-summary.html`，確認三頁的整個 `<style>`、固定 `.controls`
     DOM 及 Web Speech JavaScript 逐字一致，且只存在本規格允許的內容差異。
